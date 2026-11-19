@@ -30,6 +30,7 @@ Usage: #example
 * extension[runContext].extension[eventType].valueCoding = IRunEventTypeCS#wgm
 * extension[runContext].extension[eventName].valueString = "HL7 Europe WGM Malaga 2026"
 * extension[runContext].extension[phase].valueCoding = IRunPhaseCS#during-run
+* extension[runContext].extension[location].valueReference = Reference(malaga-course-example)
 * status = #final
 * subject = Reference(runner-example)
 * effectiveDateTime = "2026-11-18T07:45:00+01:00"
@@ -58,6 +59,7 @@ Usage: #example
 * extension[runContext].extension[eventType].valueCoding = IRunEventTypeCS#wgm
 * extension[runContext].extension[eventName].valueString = "HL7 Europe WGM Malaga 2026"
 * extension[runContext].extension[phase].valueCoding = IRunPhaseCS#during-run
+* extension[runContext].extension[location].valueReference = Reference(malaga-course-example)
 * status = #final
 * subject = Reference(runner-example)
 * effectiveDateTime = "2026-11-18T07:45:00+01:00"
@@ -85,3 +87,72 @@ Usage: #example
 * component[0].valueSampledData.factor = 1
 * component[0].valueSampledData.dimensions = 1
 * component[0].valueSampledData.data = "0.02 0.03 0.05 0.04 0.02 -0.05 1.10 -0.30 0.01 0.08 0.15 0.12 0.05 0.02"
+
+Instance: malaga-course-example
+InstanceOf: IRunLocation
+Title: "Example run course: Malaga seafront"
+Description: "Fictional meeting point and course for the Interoperability Run at the HL7 Europe WGM Malaga 2026."
+Usage: #example
+* status = #active
+* name = "Malaga seafront run course"
+* description = "Meeting point in front of the meeting hotel; out-and-back course along the seafront (illustrative)."
+* address.city = "Malaga"
+* address.country = "ES"
+* position.latitude = 36.7177
+* position.longitude = -4.4258
+
+Instance: exercise-session-example
+InstanceOf: IRunExerciseSession
+Title: "Example run session"
+Description: "Summary of the runner's Interoperability Run: place, duration and distance."
+Usage: #example
+* extension[runContext].extension[eventType].valueCoding = IRunEventTypeCS#wgm
+* extension[runContext].extension[eventName].valueString = "HL7 Europe WGM Malaga 2026"
+* extension[runContext].extension[phase].valueCoding = IRunPhaseCS#during-run
+* extension[runContext].extension[location].valueReference = Reference(malaga-course-example)
+* status = #final
+* subject = Reference(runner-example)
+* effectivePeriod.start = "2026-11-18T07:30:00+01:00"
+* effectivePeriod.end = "2026-11-18T08:02:00+01:00"
+* device = Reference(wearable-example)
+* component[duration].valueQuantity.value = 32
+* component[distance].valueQuantity.value = 5.2
+* component[averagePace].valueQuantity.value = 6.15
+
+Instance: run-appointment-example
+InstanceOf: IRunAppointment
+Title: "Example appointment: Interoperability Run"
+Description: "The scheduled Interoperability Run on Wednesday morning at the HL7 Europe WGM Malaga 2026."
+Usage: #example
+* status = #booked
+* serviceType.text = "Interoperability Run"
+* description = "Interoperability Run - HL7 Europe WGM Malaga 2026, meeting point in front of the hotel"
+* start = "2026-11-18T07:30:00+01:00"
+* end = "2026-11-18T08:15:00+01:00"
+* participant[runner].actor = Reference(runner-example)
+* participant[runner].status = #accepted
+* participant[location].actor = Reference(malaga-course-example)
+* participant[location].status = #accepted
+
+Instance: preventive-careplan-example
+InstanceOf: IRunPreventiveCarePlan
+Title: "Example preventive care plan"
+Description: "A runner's preventive check-up plan around the Interoperability Run: resting vital signs before, join the run, recovery vital signs and ECG after."
+Usage: #example
+* status = #active
+* intent = #plan
+* title = "Interoperability Run preventive check-up"
+* description = "Measure resting heart rate and SpO2 before the run, join the run, then record recovery heart rate and a single-lead ECG after the finish."
+* subject = Reference(runner-example)
+* period.start = "2026-11-18T07:00:00+01:00"
+* period.end = "2026-11-18T09:00:00+01:00"
+* activity[0].reference = Reference(run-appointment-example)
+* activity[1].detail.code = $loinc#8867-4 "Heart rate"
+* activity[1].detail.status = #completed
+* activity[1].detail.description = "Resting and recovery heart rate (before and after the run)"
+* activity[2].detail.code = $loinc#2708-6 "Oxygen saturation in Arterial blood"
+* activity[2].detail.status = #completed
+* activity[2].detail.description = "SpO2 before and during the run"
+* activity[3].detail.code = $loinc#11524-6 "EKG study"
+* activity[3].detail.status = #completed
+* activity[3].detail.description = "Single-lead ECG right after the finish"

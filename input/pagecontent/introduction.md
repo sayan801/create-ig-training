@@ -6,6 +6,7 @@ The **Interoperability Run** is an informal run for participants of FHIR communi
 
 * **Runner:** an event participant who wears one or more devices. Profiled as [IRunRunner](StructureDefinition-irun-runner.html), which inherits from the HL7 Europe Patient profile (`patient-eu-core`).
 * **Wearable device:** a smartwatch, chest strap, pulse oximeter or single-lead ECG. Profiled as [IRunWearableDevice](StructureDefinition-irun-wearable-device.html).
+* **Run course / location:** the meeting point and course. Profiled as [IRunLocation](StructureDefinition-irun-location.html).
 * **Collector app / FHIR server:** receives the observations from the runners' apps (after the runner's consent) and makes them available for the event dashboard.
 * **Dashboard / viewer:** shows aggregated or individual results per event.
 

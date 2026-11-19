@@ -32,3 +32,14 @@ Title: "Interoperability Run - measurement phases"
 Description: "All measurement phases for an Interoperability Run."
 * ^experimental = true
 * include codes from system IRunPhaseCS
+
+CodeSystem: IRunExerciseCS
+Id: irun-exercise
+Title: "Interoperability Run - exercise codes"
+Description: "Codes for the run session and its measurements where no suitable LOINC code is used in this training IG."
+* ^caseSensitive = true
+* ^experimental = true
+* #run-session "Run session" "A completed Interoperability Run session (exercise summary)."
+* #distance "Distance run" "Total distance covered during the run."
+* #average-pace "Average pace" "Average time per kilometre."
+* #preventive-checkup "Preventive check-up" "Preventive care check-up around the Interoperability Run (vital signs before and after the run)."

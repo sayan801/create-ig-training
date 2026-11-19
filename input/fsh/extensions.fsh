@@ -6,7 +6,8 @@ Context: Observation
 * extension contains
     eventType 1..1 MS and
     eventName 0..1 MS and
-    phase 0..1 MS
+    phase 0..1 MS and
+    location 0..1 MS
 * extension[eventType] ^short = "Type of event (WGM, Connectathon, DevDays...)"
 * extension[eventType].value[x] only Coding
 * extension[eventType].valueCoding from IRunEventTypeVS (required)
@@ -15,3 +16,5 @@ Context: Observation
 * extension[phase] ^short = "Before, during or after the run"
 * extension[phase].value[x] only Coding
 * extension[phase].valueCoding from IRunPhaseVS (required)
+* extension[location] ^short = "Where the run took place (course / meeting point)"
+* extension[location].value[x] only Reference(IRunLocation)

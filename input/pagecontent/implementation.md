@@ -7,6 +7,10 @@
 | [IRunHeartRate](StructureDefinition-irun-heart-rate.html) | FHIR core `heartrate` (vital signs) | LOINC 8867-4, unit `/min`, run context, device required |
 | [IRunOxygenSaturation](StructureDefinition-irun-oxygen-saturation.html) | FHIR core `oxygensat` (vital signs) | LOINC 2708-6, unit `%`, run context, device required |
 | [IRunECG](StructureDefinition-irun-ecg.html) | Observation | LOINC 11524-6, one component per lead with an MDC code and SampledData waveform |
+| [IRunExerciseSession](StructureDefinition-irun-exercise-session.html) | Observation | category `activity`; effectivePeriod required; components duration (LOINC 55411-3, `min`), distance (`km`), average pace (`min/km`); location via run context |
+| [IRunLocation](StructureDefinition-irun-location.html) | Location | name required; address and position (coordinates) |
+| [IRunAppointment](StructureDefinition-irun-appointment.html) | Appointment | start and end required; participants sliced into runner and location |
+| [IRunPreventiveCarePlan](StructureDefinition-irun-preventive-careplan.html) | CarePlan | category preventive check-up; activities reference the run appointment and the planned measurements |
 
 The HL7 Europe base package (`hl7.fhir.eu.base` 2.0.1) does not define vital-sign profiles, so heart rate and SpO2 inherit from the FHIR core vital signs profiles, as required by FHIR for these measurements.
 
@@ -14,7 +18,7 @@ The HL7 Europe base package (`hl7.fhir.eu.base` 2.0.1) does not define vital-sig
 
 * LOINC for observation codes; UCUM for units.
 * ISO/IEEE 11073 MDC (`urn:oid:2.16.840.1.113883.6.24`) for ECG leads, e.g. `131329` = lead I.
-* Local code systems: [event type](CodeSystem-irun-event-type.html) and [measurement phase](CodeSystem-irun-phase.html).
+* Local code systems: [event type](CodeSystem-irun-event-type.html), [measurement phase](CodeSystem-irun-phase.html) and [exercise codes](CodeSystem-irun-exercise.html) (run session, distance, average pace, preventive check-up). These local codes could be replaced by LOINC / SNOMED CT codes in a later version.
 
 ### Examples
 
@@ -23,9 +27,17 @@ The HL7 Europe base package (`hl7.fhir.eu.base` 2.0.1) does not define vital-sig
 * [Heart rate during the run](Observation-heart-rate-during-run-example.html)
 * [SpO2 during the run](Observation-spo2-during-run-example.html)
 * [Single-lead ECG after the run](Observation-ecg-post-run-example.html)
+* [Run session (place, duration, distance)](Observation-exercise-session-example.html)
+* [Run course: Malaga seafront](Location-malaga-course-example.html)
+* [Appointment for the run](Appointment-run-appointment-example.html)
+* [Preventive care plan](CarePlan-preventive-careplan-example.html)
 
 ### Ideas for a Connectathon track
 
 * Client: convert data exported from a wearable vendor app into these profiles and POST them to a FHIR server.
 * Server / dashboard: search `Observation?code=8867-4&subject=...` and show results per phase and per event.
 * Validation: validate the instances against this IG (e.g. with Matchbox or the HL7 validator).
+
+### Acknowledgements
+
+The exercise session, care plan and appointment were added after feedback from Roeland Luykx in the Malaga Interoperability Run group.
