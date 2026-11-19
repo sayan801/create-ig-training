@@ -1,12 +1,12 @@
 <p style="padding: 5px; border-radius: 5px; border: 2px solid maroon; background: #ffffe6; width: 65%">
 <b>Brief description of this Implementation Guide</b><br>
-[Add a brief description of this IG in English]
+This Implementation Guide captures vital-sign observations (heart rate, oxygen saturation and ECG) recorded by wearable devices during the <b>Interoperability Run</b>: the community run held at HL7 Working Group Meetings, Connectathons and DevDays.
 </p>
 
 {% if site.data.info.releaselabel == 'ci-build' %}
 <div style="width: 65%">
     <blockquote class="stu-note">
-    <p>This Implementation Guide is not the current version. It is the continuous integration version, subject to frequent changes and intended only to follow ongoing work. The current version will be available via the canonical URL after the first release: https://example.org/ig/[code - ig]</p>
+    <p>This Implementation Guide is not the current version. It is the continuous integration version, subject to frequent changes and intended only to follow ongoing work. The current version will be available via the canonical URL after the first release: https://example.org/ig/interoperabilityrun</p>
     </blockquote>
 </div>
 {% endif %}
@@ -18,7 +18,7 @@
 <p>
   <b>Warning!</b>
   <br>
- This Implementation Guide is currently open for public comment. The current version is available at: https://example.org/ig/[code - ig]
+ This Implementation Guide is currently open for public comment. The current version is available at: https://example.org/ig/interoperabilityrun
 </p>
 </blockquote>
 </div>
@@ -33,19 +33,28 @@
 
 ### Introduction
 
-Define here what the IG is about (in non-expert terms, understandable by a patient). Also add the technical details on the context and the need for this IG.
+When the FHIR community meets (HL7 Working Group Meetings, Connectathons, DevDays), many participants join an early-morning **Interoperability Run**. Most runners wear a smartwatch, chest strap or pulse oximeter that records their vital signs.
 
-The main sections of the IG are:
+This IG shows how to exchange those measurements in FHIR, so that data from different devices and apps can be pooled, compared and visualised for each event. It is also a small, fun training example of how to build an IG with FSH, SUSHI and the IG Publisher on top of the **HL7 Europe base profiles**.
 
-* The context of the IG, and the problem it solves
-* What implementers must put in place
-* A "Conformance resources" tab to ensure a consistent global scheme across all IGs
+### Scope
 
-### Project scope
+* **In scope:**
+  * heart rate, peripheral oxygen saturation (SpO2) and ECG recordings taken before, during and after the run, with the event and measurement phase
+  * the run session itself: place, duration, distance and pace
+  * the scheduled run as an appointment, and a light preventive care plan around it
+  * environmental conditions: air temperature, humidity and water temperature (for swimmers)
+  * a participant report bringing all results together
+* **Out of scope:** clinical interpretation, diagnosis and full GPS tracks.
 
-Define in a few lines the scope of the project.
+All data in this guide are fictional and are **not intended for clinical use**.
 
-Always keep the "Conformance resources" tab to ensure overall consistency across all IGs.
+### Content
+
+* [Introduction](introduction.html): context and actors
+* [Functional](functional.html): use cases and data flow
+* [Implementation](implementation.html): profiles, terminology and examples
+* [Artifacts](artifacts.html): all profiles, extensions, terminology and examples
 
 ### Dependencies
 
