@@ -1,0 +1,7 @@
+[{
+  "id" : "org.fhir.eu.interoperabilityrun",
+  "type" : "ImplementationGuide",
+  "url" : "https://example.org/ig/interoperabilityrun/ImplementationGuide/org.fhir.eu.interoperabilityrun",
+  "version" : "0.1.0",
+  "name" : "ExampleIG"
+}]

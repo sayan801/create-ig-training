@@ -1,0 +1,107 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Observation/ecg-post-run-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "ecg-post-run-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-ecg" ;
+       fhir:index 0 ;
+       fhir:link <https://example.org/ig/interoperabilityrun/StructureDefinition/irun-ecg>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation ecg-post-run-example</b></p><a name=\"ecg-post-run-example\"> </a><a name=\"hcecg-post-run-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-ecg.html\">Interoperability Run - ECG</a></p></div><blockquote><p><b>Interoperability Run context</b></p><ul><li>eventType: <a href=\"CodeSystem-irun-event-type.html#irun-event-type-wgm\">Interoperability Run - event type: wgm</a> (HL7 Working Group Meeting)</li><li>eventName: HL7 Europe WGM Malaga 2026</li><li>phase: <a href=\"CodeSystem-irun-phase.html#irun-phase-post-run\">Interoperability Run - measurement phase: post-run</a> (After the run)</li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}\">Procedure</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></p><p><b>subject</b>: <a href=\"Patient-runner-example.html\">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p><p><b>effective</b>: 2026-11-18 08:05:00+0100 --&gt; 2026-11-18 08:05:30+0100</p><p><b>device</b>: <a href=\"Device-wearable-example.html\">Device: manufacturer = Example Wearables Ltd; modelNumber = SW-1; type = Wrist-worn fitness tracker with heart rate, SpO2 and single-lead ECG</a></p><h3>Components</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{urn:oid:2.16.840.1.113883.6.24 131329}\">MDC_ECG_ELEC_POTL_I</span></td><td>Origin: 0 mV , Factor: 1 , Dimensions: 1 , Data: 0.02 0.03 0.05 0.04 0.02 -0.05 1.10 -0.30 0.01 0.08 0.15 0.12 0.05 0.02 </td></tr></table></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "eventType" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type" ] ;
+         fhir:Coding.code [ fhir:value "wgm" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "eventName" ] ;
+       fhir:Extension.valueString [ fhir:value "HL7 Europe WGM Malaga 2026" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "phase" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase" ] ;
+         fhir:Coding.code [ fhir:value "post-run" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "procedure" ] ;
+       fhir:Coding.display [ fhir:value "Procedure" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       a loinc:11524-6 ;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+       fhir:Coding.code [ fhir:value "11524-6" ] ;
+       fhir:Coding.display [ fhir:value "EKG study" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://example.org/ig/interoperabilityrun/Patient/runner-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/runner-example" ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2026-11-18T08:05:00+01:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-11-18T08:05:30+01:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Observation.device [
+     fhir:link <https://example.org/ig/interoperabilityrun/Device/wearable-example> ;
+     fhir:Reference.reference [ fhir:value "Device/wearable-example" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.6.24" ] ;
+         fhir:Coding.code [ fhir:value "131329" ] ;
+         fhir:Coding.display [ fhir:value "MDC_ECG_ELEC_POTL_I" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueSampledData [
+       fhir:SampledData.origin [
+         fhir:Quantity.value [ fhir:value "0"^^xsd:decimal ] ;
+         fhir:Quantity.unit [ fhir:value "mV" ] ;
+         fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+         fhir:Quantity.code [ fhir:value "mV" ]
+       ] ;
+       fhir:SampledData.period [ fhir:value "2"^^xsd:decimal ] ;
+       fhir:SampledData.factor [ fhir:value "1"^^xsd:decimal ] ;
+       fhir:SampledData.dimensions [ fhir:value "1"^^xsd:positiveInteger ] ;
+       fhir:SampledData.data [ fhir:value "0.02 0.03 0.05 0.04 0.02 -0.05 1.10 -0.30 0.01 0.08 0.15 0.12 0.05 0.02" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Observation/ecg-post-run-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

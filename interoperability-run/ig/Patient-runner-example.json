@@ -1,0 +1,21 @@
+{
+  "resourceType" : "Patient",
+  "id" : "runner-example",
+  "meta" : {
+    "profile" : ["https://example.org/ig/interoperabilityrun/StructureDefinition/irun-runner"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient runner-example</b></p><a name=\"runner-example\"> </a><a name=\"hcrunner-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-runner.html\">Interoperability Run - runner</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</p><hr/></div>"
+  },
+  "identifier" : [{
+    "system" : "https://example.org/ig/interoperabilityrun/bib",
+    "value" : "MLG26-042"
+  }],
+  "name" : [{
+    "family" : "Runner",
+    "given" : ["Alex"]
+  }],
+  "gender" : "other",
+  "birthDate" : "1985-04-12"
+}

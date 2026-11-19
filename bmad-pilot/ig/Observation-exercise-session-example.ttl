@@ -1,0 +1,136 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Observation/exercise-session-example> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "exercise-session-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-exercise-session" ;
+       fhir:index 0 ;
+       fhir:link <https://example.org/ig/interoperabilityrun/StructureDefinition/irun-exercise-session>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation exercise-session-example</b></p><a name=\"exercise-session-example\"> </a><a name=\"hcexercise-session-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-exercise-session.html\">Interoperability Run - exercise session</a></p></div><blockquote><p><b>Interoperability Run context</b></p><ul><li>eventType: <a href=\"CodeSystem-irun-event-type.html#irun-event-type-wgm\">Interoperability Run - event type: wgm</a> (HL7 Working Group Meeting)</li><li>eventName: HL7 Europe WGM Malaga 2026</li><li>phase: <a href=\"CodeSystem-irun-phase.html#irun-phase-during-run\">Interoperability Run - measurement phase: during-run</a> (During the run)</li><li>location: <a href=\"Location-malaga-course-example.html\">Malaga seafront run course</a></li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category activity}\">Activity</span></p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise run-session}\">Run session</span></p><p><b>subject</b>: <a href=\"Patient-runner-example.html\">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p><p><b>effective</b>: 2026-11-18 07:30:00+0100 --&gt; 2026-11-18 08:02:00+0100</p><p><b>device</b>: <a href=\"Device-wearable-example.html\">Device: manufacturer = Example Wearables Ltd; modelNumber = SW-1; type = Wrist-worn fitness tracker with heart rate, SpO2 and single-lead ECG</a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 55411-3}\">Exercise duration</span></p><p><b>value</b>: 32 min<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin = 'min')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise distance}\">Distance run</span></p><p><b>value</b>: 5.2 km<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codekm = 'km')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise average-pace}\">Average pace</span></p><p><b>value</b>: 6.15 min/km<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codemin/km = 'min/km')</span></p></blockquote></div>"
+  ] ;
+  fhir:DomainResource.extension [
+     fhir:index 0 ;
+     fhir:Element.extension [
+       fhir:index 0 ;
+       fhir:Extension.url [ fhir:value "eventType" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type" ] ;
+         fhir:Coding.code [ fhir:value "wgm" ]
+       ]
+     ], [
+       fhir:index 1 ;
+       fhir:Extension.url [ fhir:value "eventName" ] ;
+       fhir:Extension.valueString [ fhir:value "HL7 Europe WGM Malaga 2026" ]
+     ], [
+       fhir:index 2 ;
+       fhir:Extension.url [ fhir:value "phase" ] ;
+       fhir:Extension.valueCoding [
+         fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase" ] ;
+         fhir:Coding.code [ fhir:value "during-run" ]
+       ]
+     ], [
+       fhir:index 3 ;
+       fhir:Extension.url [ fhir:value "location" ] ;
+       fhir:Extension.valueReference [
+         fhir:link <https://example.org/ig/interoperabilityrun/Location/malaga-course-example> ;
+         fhir:Reference.reference [ fhir:value "Location/malaga-course-example" ]
+       ]
+     ] ;
+     fhir:Extension.url [ fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context" ]
+  ] ;
+  fhir:Observation.status [ fhir:value "final"] ;
+  fhir:Observation.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ] ;
+       fhir:Coding.code [ fhir:value "activity" ]
+     ]
+  ] ;
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise" ] ;
+       fhir:Coding.code [ fhir:value "run-session" ]
+     ]
+  ] ;
+  fhir:Observation.subject [
+     fhir:link <https://example.org/ig/interoperabilityrun/Patient/runner-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/runner-example" ]
+  ] ;
+  fhir:Observation.effectivePeriod [
+     fhir:Period.start [ fhir:value "2026-11-18T07:30:00+01:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-11-18T08:02:00+01:00"^^xsd:dateTime ]
+  ] ;
+  fhir:Observation.device [
+     fhir:link <https://example.org/ig/interoperabilityrun/Device/wearable-example> ;
+     fhir:Reference.reference [ fhir:value "Device/wearable-example" ]
+  ] ;
+  fhir:Observation.component [
+     fhir:index 0 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         a loinc:55411-3 ;
+         fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+         fhir:Coding.code [ fhir:value "55411-3" ] ;
+         fhir:Coding.display [ fhir:value "Exercise duration" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "32"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "min" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "min" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise" ] ;
+         fhir:Coding.code [ fhir:value "distance" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "5.2"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "km" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "km" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:Observation.component.code [
+       fhir:CodeableConcept.coding [
+         fhir:index 0 ;
+         fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise" ] ;
+         fhir:Coding.code [ fhir:value "average-pace" ]
+       ]
+     ] ;
+     fhir:Observation.component.valueQuantity [
+       fhir:Quantity.value [ fhir:value "6.15"^^xsd:decimal ] ;
+       fhir:Quantity.unit [ fhir:value "min/km" ] ;
+       fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ] ;
+       fhir:Quantity.code [ fhir:value "min/km" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Observation/exercise-session-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1659 @@
+{
+  "date" : "Thu, 19 Nov, 2026 12:58:20 +0000",
+  "doco" : "For each file: start is seconds after start activity occurred. Length = milliseconds activity took",
+  "files" : [{
+    "name" : "/fsh-generated/resources/ImplementationGuide-org.fhir.eu.interoperabilityrun.json",
+    "size" : 14048,
+    "processes" : [{
+      "activity" : "load",
+      "start" : 25,
+      "length" : 209
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 15
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 27,
+      "length" : 80
+    },
+    {
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 1713
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 63
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 73
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 3
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Appointment-run-appointment-example.json",
+    "size" : 734,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 5
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 27,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 27,
+      "length" : 594
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 15
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 16
+    },
+    {
+      "activity" : "generateExampleZip",
+      "start" : 51,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CarePlan-preventive-careplan-example.json",
+    "size" : 2009,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 55
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 77
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 17
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-irun-event-type.json",
+    "size" : 1016,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 7
+    },
+    {
+      "activity" : "loadDepInfo",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 44
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 97
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-irun-exercise.json",
+    "size" : 2075,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 6
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 19
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 54
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/CodeSystem-irun-phase.json",
+    "size" : 833,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 5
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 46
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Device-wearable-example.json",
+    "size" : 527,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 5
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/DiagnosticReport-run-report-example.json",
+    "size" : 1437,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 8
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 9
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 15
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Location-malaga-course-example.json",
+    "size" : 506,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 2
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 13
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-ecg-post-run-example.json",
+    "size" : 2081,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 5
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 297
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 19
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-environment-conditions-example.json",
+    "size" : 2502,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 47
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 30
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 12
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-exercise-session-example.json",
+    "size" : 2762,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "scan",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 109
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 30
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 4
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-heart-rate-during-run-example.json",
+    "size" : 1675,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 41
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-heart-rate-pre-run-example.json",
+    "size" : 1518,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 4
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 30
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Observation-spo2-during-run-example.json",
+    "size" : 1661,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 34
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/Patient-runner-example.json",
+    "size" : 454,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 4
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 11
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-appointment.json",
+    "size" : 2754,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 59
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 65
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 508
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 38
+    },
+    {
+      "activity" : "generate2",
+      "start" : 37,
+      "length" : 1082
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 619
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 8
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-context.json",
+    "size" : 4833,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 7
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 31
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 36
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 190
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 25
+    },
+    {
+      "activity" : "generate2",
+      "start" : 38,
+      "length" : 259
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 149
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-ecg.json",
+    "size" : 3889,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 5
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 58
+    },
+    {
+      "activity" : "scan",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 26
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 217
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 44
+    },
+    {
+      "activity" : "generate2",
+      "start" : 38,
+      "length" : 565
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 278
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 26
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-environment-conditions.json",
+    "size" : 5917,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 6
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 88
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 31
+    },
+    {
+      "activity" : "validate",
+      "start" : 29,
+      "length" : 352
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 62
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 543
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 241
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 13
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 58,
+      "length" : 1
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 2
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-exercise-session.json",
+    "size" : 6508,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 9
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 89
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 30
+    },
+    {
+      "activity" : "validate",
+      "start" : 30,
+      "length" : 535
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 57
+    },
+    {
+      "activity" : "generate2",
+      "start" : 39,
+      "length" : 508
+    },
+    {
+      "activity" : "generate2",
+      "start" : 43,
+      "length" : 233
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 9
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-heart-rate.json",
+    "size" : 2087,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 87
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 18
+    },
+    {
+      "activity" : "validate",
+      "start" : 30,
+      "length" : 232
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 52
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 402
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 201
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 10
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-location.json",
+    "size" : 1158,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 37
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 30,
+      "length" : 107
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 22
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 132
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 96
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 4
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-oxygen-saturation.json",
+    "size" : 2154,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 195
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 16
+    },
+    {
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 202
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 51
+    },
+    {
+      "activity" : "generate2",
+      "start" : 40,
+      "length" : 351
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 153
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 8
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-preventive-careplan.json",
+    "size" : 2859,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 44
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 17
+    },
+    {
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 124
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 37
+    },
+    {
+      "activity" : "generate2",
+      "start" : 41,
+      "length" : 317
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 145
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 7
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-report.json",
+    "size" : 3429,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 27
+    },
+    {
+      "activity" : "checkR4R4B",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 9
+    },
+    {
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 55
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 23
+    },
+    {
+      "activity" : "generate2",
+      "start" : 41,
+      "length" : 216
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 81
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 4
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-runner.json",
+    "size" : 1190,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 41
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 12
+    },
+    {
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 119
+    },
+    {
+      "activity" : "scanForUsageStats",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 36
+    },
+    {
+      "activity" : "generate2",
+      "start" : 41,
+      "length" : 337
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 140
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 51,
+      "length" : 5
+    },
+    {
+      "activity" : "scanExamplesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/StructureDefinition-irun-wearable-device.json",
+    "size" : 1480,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateSnapshots",
+      "start" : 26,
+      "length" : 36
+    },
+    {
+      "activity" : "load-configure",
+      "start" : 27,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 13
+    },
+    {
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 93
+    },
+    {
+      "activity" : "checkConformanceResources",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "validate",
+      "start" : 33,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 30
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 180
+    },
+    {
+      "activity" : "generate2",
+      "start" : 44,
+      "length" : 123
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 52,
+      "length" : 5
+    },
+    {
+      "activity" : "scanProfilesForR5",
+      "start" : 58,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-irun-event-type.json",
+    "size" : 477,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 2
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 5
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 1
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 183
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 56
+    },
+    {
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 65
+    },
+    {
+      "activity" : "makeDependencies",
+      "start" : 46,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-irun-phase.json",
+    "size" : 472,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 3
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 3
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 10
+    },
+    {
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 3
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 62
+    },
+    {
+      "activity" : "generateValidationPack",
+      "start" : 52,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "fsh-generated/resources/ValueSet-irun-session-type.json",
+    "size" : 628,
+    "processes" : [{
+      "activity" : "loadResources",
+      "start" : 25,
+      "length" : 1
+    },
+    {
+      "activity" : "load",
+      "start" : 25,
+      "length" : 4
+    },
+    {
+      "activity" : "generateNarratives",
+      "start" : 28,
+      "length" : 12
+    },
+    {
+      "activity" : "validate",
+      "start" : 28,
+      "length" : 15
+    },
+    {
+      "activity" : "generate1",
+      "start" : 34,
+      "length" : 2
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 50
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/fsh-link-references.md",
+    "size" : 1820,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/fsh-generated/includes/menu.xml",
+    "size" : 1285,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/data/features.yml",
+    "size" : 164
+  },
+  {
+    "name" : "/input/pagecontent/functional.md",
+    "size" : 2324,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/index.md",
+    "size" : 2949,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/about.md",
+    "size" : 94,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 31,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/implementation.md",
+    "size" : 4970,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/pagecontent/introduction.md",
+    "size" : 1223,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/template/config",
+    "size" : 0,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    },
+    {
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/template/config/_config.yml",
+    "size" : 140,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images",
+    "size" : 0
+  },
+  {
+    "name" : "/input/images/ci-sis-logo.png",
+    "size" : 61365,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/input/images/anImage.png",
+    "size" : 36288,
+    "processes" : [{
+      "activity" : "validate",
+      "start" : 34,
+      "length" : 1
+    }]
+  },
+  {
+    "name" : "/temp/pages/_includes/artifacts.xml",
+    "size" : 15699,
+    "processes" : [{
+      "activity" : "generate2",
+      "start" : 42,
+      "length" : 1
+    }]
+  }]
+}

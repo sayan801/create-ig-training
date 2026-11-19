@@ -1,0 +1,803 @@
+{
+  "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "systems" : ["http://hl7.org/fhir/administrative-gender"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-runner.html" : "Interoperability Run - runner"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/appointment-cancellation-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentCancellationReason",
+    "title" : "Appointment cancellation reason",
+    "description" : "This example value set defines a set of reasons for the cancellation of an appointment.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/appointment-cancellation-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1381"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1381"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/appointmentstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AppointmentStatus",
+    "title" : "AppointmentStatus",
+    "description" : "The free/busy status of an appointment.",
+    "systems" : ["http://hl7.org/fhir/appointmentstatus"],
+    "oids" : ["2.16.840.1.113883.4.642.3.484"],
+    "sources" : ["2.16.840.1.113883.4.642.3.484"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/body-site",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTBodyStructures",
+    "title" : "SNOMED CT Body Structures",
+    "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.141"],
+    "sources" : ["2.16.840.1.113883.4.642.3.141"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/c80-practice-codes",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PracticeSettingCodeValueSet",
+    "title" : "Practice Setting Code Value Set",
+    "description" : "This is the code representing the clinical specialty of the clinician or provider who interacted with, treated, or provided a service to/for the patient. The value set used for clinical specialty has been limited by HITSP to the value set reproduced from HITSP C80 Table 2-149 Clinical Specialty Value Set Definition.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.72"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.72"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-kind",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityKind",
+    "title" : "Care Plan Activity Kind",
+    "description" : "Resource types defined as part of FHIR that can be represented as in-line definitions of a care plan activity.",
+    "systems" : ["http://hl7.org/fhir/resource-types"],
+    "oids" : ["2.16.840.1.113883.4.642.3.145"],
+    "sources" : ["2.16.840.1.113883.4.642.3.145"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-outcome",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityOutcome",
+    "title" : "Care Plan Activity Outcome",
+    "description" : "Example codes indicating the outcome of a care plan activity. Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.149"],
+    "sources" : ["2.16.840.1.113883.4.642.3.149"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-activity-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityStatus",
+    "title" : "CarePlanActivityStatus",
+    "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+    "systems" : ["http://hl7.org/fhir/care-plan-activity-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.146"],
+    "sources" : ["2.16.840.1.113883.4.642.3.146"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanCategory",
+    "title" : "Care Plan Category",
+    "description" : "Example codes indicating the category a care plan falls within.  Note that these are in no way complete and might not even be appropriate for some uses.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.148"],
+    "sources" : ["2.16.840.1.113883.4.642.3.148"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/care-plan-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanIntent",
+    "title" : "Care Plan Intent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a care plan.",
+    "systems" : ["http://hl7.org/fhir/request-intent"],
+    "oids" : ["2.16.840.1.113883.4.642.3.150"],
+    "sources" : ["2.16.840.1.113883.4.642.3.150"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/clinical-findings",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTClinicalFindings",
+    "title" : "SNOMED CT Clinical Findings",
+    "description" : "This value set includes all the \"Clinical finding\" [SNOMED CT](http://snomed.info/sct) codes - concepts where concept is-a 404684003 (Clinical finding (finding)).",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.232"],
+    "sources" : ["2.16.840.1.113883.4.642.3.232"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-report.html" : "Interoperability Run - participant report",
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/data-absent-reason",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/data-absent-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.5"],
+    "sources" : ["2.16.840.1.113883.4.642.3.5"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "systems" : ["http://hl7.org/fhir/days-of-week"],
+    "oids" : ["2.16.840.1.113883.4.642.3.512"],
+    "sources" : ["2.16.840.1.113883.4.642.3.512"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-nametype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceNameType",
+    "title" : "DeviceNameType",
+    "description" : "The type of name the device is referred by.",
+    "systems" : ["http://hl7.org/fhir/device-nametype"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1083"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1083"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-wearable-device.html" : "Interoperability Run - wearable device"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatus",
+    "title" : "FHIRDeviceStatus",
+    "description" : "The availability status of the device.",
+    "systems" : ["http://hl7.org/fhir/device-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.209"],
+    "sources" : ["2.16.840.1.113883.4.642.3.209"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-wearable-device.html" : "Interoperability Run - wearable device"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-status-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatusReason",
+    "title" : "FHIRDeviceStatusReason",
+    "description" : "The availability status reason of the device.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/device-status-reason"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1081"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1081"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-wearable-device.html" : "Interoperability Run - wearable device"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/device-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceType",
+    "title" : "Device Type",
+    "description" : "Codes used to identify medical devices. Includes concepts from SNOMED CT (http://www.snomed.org/) where concept is-a 49062001 (Device)  and is provided as a suggestive example.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1376"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1376"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-wearable-device.html" : "Interoperability Run - wearable device"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "systems" : ["http://hl7.org/fhir/diagnostic-report-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.235"],
+    "sources" : ["2.16.840.1.113883.4.642.3.235"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-report.html" : "Interoperability Run - participant report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/diagnostic-service-sections",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticServiceSectionCodes",
+    "title" : "Diagnostic Service Section Codes",
+    "description" : "This value set includes all the codes in HL7 V2 table 0074.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0074"],
+    "oids" : ["2.16.840.1.113883.4.642.3.234"],
+    "sources" : ["2.16.840.1.113883.4.642.3.234"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-report.html" : "Interoperability Run - participant report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-participant-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantType",
+    "title" : "Participant type",
+    "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/participant-type",
+    "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"],
+    "oids" : ["2.16.840.1.113883.4.642.3.250"],
+    "sources" : ["2.16.840.1.113883.4.642.3.250"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/encounter-reason",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterReasonCodes",
+    "title" : "Encounter Reason Codes",
+    "description" : "This examples value set defines the set of codes that can be used to indicate reasons for an encounter.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.261"],
+    "sources" : ["2.16.840.1.113883.4.642.3.261"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-wearable-device.html" : "Interoperability Run - wearable device",
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment",
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-report.html" : "Interoperability Run - participant report",
+    "StructureDefinition-irun-runner.html" : "Interoperability Run - runner",
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG",
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/link-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "LinkType",
+    "title" : "LinkType",
+    "description" : "The type of link between this patient resource and another patient resource.",
+    "systems" : ["http://hl7.org/fhir/link-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.423"],
+    "sources" : ["2.16.840.1.113883.4.642.3.423"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-runner.html" : "Interoperability Run - runner"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/location-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationMode",
+    "title" : "LocationMode",
+    "description" : "Indicates whether a resource instance represents a specific location or a class of locations.",
+    "systems" : ["http://hl7.org/fhir/location-mode"],
+    "oids" : ["2.16.840.1.113883.4.642.3.330"],
+    "sources" : ["2.16.840.1.113883.4.642.3.330"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/location-physical-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/location-physical-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.328"],
+    "sources" : ["2.16.840.1.113883.4.642.3.328"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LocationStatus",
+    "title" : "LocationStatus",
+    "description" : "Indicates whether the location is still in use.",
+    "systems" : ["http://hl7.org/fhir/location-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.332"],
+    "sources" : ["2.16.840.1.113883.4.642.3.332"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/marital-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "Marital Status Codes",
+    "title" : "MaritalStatus",
+    "description" : "This value set defines the set of codes that can be used to indicate the marital status of a person.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "http://terminology.hl7.org/CodeSystem/v3-NullFlavor"],
+    "oids" : ["2.16.840.1.113883.4.642.3.29"],
+    "sources" : ["2.16.840.1.113883.4.642.3.29"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-runner.html" : "Interoperability Run - runner"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/medication-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SNOMEDCTMedicationCodes",
+    "title" : "SNOMED CT Medication Codes",
+    "description" : "This value set includes all drug or medicament substance codes and all pharmaceutical/biologic products from SNOMED CT - provided as an exemplar value set.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.375"],
+    "sources" : ["2.16.840.1.113883.4.642.3.375"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/name-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "NameUse",
+    "title" : "NameUse",
+    "description" : "The use of a human name.",
+    "systems" : ["http://hl7.org/fhir/name-use"],
+    "oids" : ["2.16.840.1.113883.4.642.3.65"],
+    "sources" : ["2.16.840.1.113883.4.642.3.65"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-runner.html" : "Interoperability Run - runner"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/observation-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.403"],
+    "sources" : ["2.16.840.1.113883.4.642.3.403"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCCodes",
+    "title" : "LOINC Codes",
+    "description" : "This value set includes all LOINC codes",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.396"],
+    "sources" : ["2.16.840.1.113883.4.642.3.396"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-interpretation",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationInterpretationCodes",
+    "title" : "Observation Interpretation Codes",
+    "description" : "A categorical assessment, providing a rough qualitative interpretation of the observation value,    such as “normal”/ “abnormal”,”low” / “high”, “better” / “worse”, “susceptible” / “resistant”, “expected”/ “not expected”.    The value set is intended to be for ANY use where coded representation of an interpretation is needed.   \r\n   \r\n   Notes:\r\n   \r\n   This is being communicated in v2.x in OBX-8 (Observation Interpretation), in v3 in ObservationInterpretation (CWE) in R1 (Representative Realm) and in FHIR in    Observation.interpretation. Historically these values come from the laboratory domain, and these codes are extensively    used. The value set binding is extensible, so codes outside the value set that are needed for interpretation concepts    (i.e. particular meanings) that are not included in the value set can be used, and these new codes may also be added to    the value set and published in a future version.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation"],
+    "oids" : ["2.16.840.1.113883.4.642.3.399"],
+    "sources" : ["2.16.840.1.113883.4.642.3.399"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationMethods",
+    "title" : "Observation Methods",
+    "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.395"],
+    "sources" : ["2.16.840.1.113883.4.642.3.395"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "ObservationStatus",
+    "description" : "Codes providing the status of an observation.",
+    "systems" : ["http://hl7.org/fhir/observation-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.400"],
+    "sources" : ["2.16.840.1.113883.4.642.3.400"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/observation-vitalsignresult",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "VitalSigns",
+    "title" : "Vital Signs",
+    "description" : "This value set indicates the allowed vital sign result types.   The LOINC code for Vitals Signs panel (85353-1) is a grouping structure for a set of vital signs and includes related links (with type=has-member) to the Observations in this set (e.g. respiratory rate, heart rate, BP).  The Blood pressure panel (85354-9) is used to group the component observations Systolic blood pressure (8480-6) and Diastolic blood pressure (8462-4).",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.3.88.12.80.62"],
+    "sources" : ["2.16.840.1.113883.3.88.12.80.62"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/participantrequired",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipantRequired",
+    "title" : "ParticipantRequired",
+    "description" : "Is the Participant required to attend the appointment.",
+    "systems" : ["http://hl7.org/fhir/participantrequired"],
+    "oids" : ["2.16.840.1.113883.4.642.3.488"],
+    "sources" : ["2.16.840.1.113883.4.642.3.488"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/participationstatus",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ParticipationStatus",
+    "title" : "ParticipationStatus",
+    "description" : "The Participation status of an appointment.",
+    "systems" : ["http://hl7.org/fhir/participationstatus"],
+    "oids" : ["2.16.840.1.113883.4.642.3.486"],
+    "sources" : ["2.16.840.1.113883.4.642.3.486"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PatientContactRelationship",
+    "title" : "Patient Contact Relationship ",
+    "description" : "The nature of the relationship between the patient and the contact person.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0131"],
+    "oids" : ["2.16.840.1.113883.4.642.3.1130"],
+    "sources" : ["2.16.840.1.113883.4.642.3.1130"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-runner.html" : "Interoperability Run - runner"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/procedure-code",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProcedureCodes(SNOMEDCT)",
+    "title" : "Procedure Codes (SNOMED CT)",
+    "description" : "Procedure Code: All SNOMED CT procedure codes.",
+    "systems" : ["http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.427"],
+    "sources" : ["2.16.840.1.113883.4.642.3.427"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "systems" : ["http://hl7.org/fhir/quantity-comparator"],
+    "oids" : ["2.16.840.1.113883.4.642.3.59"],
+    "sources" : ["2.16.840.1.113883.4.642.3.59"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-appliesto",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeAppliesToCodes",
+    "title" : "Observation Reference Range Applies To Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the particular target population the reference range applies to.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-Race",
+    "http://snomed.info/sct"],
+    "oids" : ["2.16.840.1.113883.4.642.3.407"],
+    "sources" : ["2.16.840.1.113883.4.642.3.407"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/referencerange-meaning",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/referencerange-meaning"],
+    "oids" : ["2.16.840.1.113883.4.642.3.397"],
+    "sources" : ["2.16.840.1.113883.4.642.3.397"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-environment-conditions.html" : "Interoperability Run - environmental conditions",
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)",
+    "StructureDefinition-irun-ecg.html" : "Interoperability Run - ECG"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/report-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "LOINCDiagnosticReportCodes",
+    "title" : "LOINC Diagnostic Report Codes",
+    "description" : "This value set includes LOINC codes that relate to Diagnostic Observations.",
+    "systems" : ["http://loinc.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.233"],
+    "sources" : ["2.16.840.1.113883.4.642.3.233"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-report.html" : "Interoperability Run - participant report"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/request-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestStatus",
+    "title" : "RequestStatus",
+    "description" : "Codes identifying the lifecycle stage of a request.",
+    "systems" : ["http://hl7.org/fhir/request-status"],
+    "oids" : ["2.16.840.1.113883.4.642.3.111"],
+    "sources" : ["2.16.840.1.113883.4.642.3.111"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-preventive-careplan.html" : "Interoperability Run - preventive care plan"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/service-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ServiceCategory",
+    "title" : "Service category",
+    "description" : "This value set defines an example set of codes that can be used to classify groupings of service-types/specialties.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/service-category"],
+    "oids" : ["2.16.840.1.113883.4.642.3.516"],
+    "sources" : ["2.16.840.1.113883.4.642.3.516"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/service-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ServiceType",
+    "title" : "Service type",
+    "description" : "This value set defines an example set of codes of service-types.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/service-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.518"],
+    "sources" : ["2.16.840.1.113883.4.642.3.518"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/ucum-vitals-common",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "VitalSignsUnits",
+    "title" : "Vital Signs Units",
+    "description" : "Common UCUM units for recording Vital Signs",
+    "systems" : ["http://unitsofmeasure.org"],
+    "oids" : ["2.16.840.1.113883.4.642.3.955"],
+    "sources" : ["2.16.840.1.113883.4.642.3.955"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-heart-rate.html" : "Interoperability Run - heart rate",
+    "StructureDefinition-irun-oxygen-saturation.html" : "Interoperability Run - oxygen saturation (SpO2)"
+  },
+  {
+    "url" : "http://hl7.org/fhir/ValueSet/udi-entry-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "UDIEntryType",
+    "title" : "UDIEntryType",
+    "description" : "Codes to identify how UDI data was entered.",
+    "systems" : ["http://hl7.org/fhir/udi-entry-type"],
+    "oids" : ["2.16.840.1.113883.4.642.3.211"],
+    "sources" : ["2.16.840.1.113883.4.642.3.211"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-wearable-device.html" : "Interoperability Run - wearable device"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0116",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSBedStatus",
+    "title" : "hl7VS-bedStatus",
+    "description" : "Value Set of codes that specify the state of a bed in an inpatient setting, and is used to determine if a patient may be assigned to it or not.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0116"],
+    "oids" : ["2.16.840.1.113883.21.51"],
+    "sources" : ["2.16.840.1.113883.21.51"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v2-0276",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Hl7VSAppointmentReasonCodes",
+    "title" : "hl7VS-appointmentReasonCodes",
+    "description" : "Value Set of codes that describe the kind of appointment or the reason why an appointment has been scheduled.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0276"],
+    "oids" : ["2.16.840.1.113883.21.181"],
+    "sources" : ["2.16.840.1.113883.21.181"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-appointment.html" : "Interoperability Run - appointment"
+  },
+  {
+    "url" : "http://terminology.hl7.org/ValueSet/v3-ServiceDeliveryLocationRoleType",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ServiceDeliveryLocationRoleType",
+    "title" : "ServiceDeliveryLocationRoleType",
+    "description" : "A role of a place that further classifies the setting (e.g., accident site, road side, work site, community location) in which services are delivered.",
+    "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+    "oids" : ["2.16.840.1.113883.1.11.17660"],
+    "sources" : ["2.16.840.1.113883.1.11.17660"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-location.html" : "Interoperability Run - location"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunEventTypeVS",
+    "title" : "Interoperability Run - event types",
+    "description" : "All event types for an Interoperability Run.",
+    "systems" : ["https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-context.html" : "Interoperability Run context"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-phase",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunPhaseVS",
+    "title" : "Interoperability Run - measurement phases",
+    "description" : "All measurement phases for an Interoperability Run.",
+    "systems" : ["https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-context.html" : "Interoperability Run context"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunSessionTypeVS",
+    "title" : "Interoperability Run - session types",
+    "description" : "Kinds of exercise session: run or swim.",
+    "systems" : ["https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session"
+  }]
+}

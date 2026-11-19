@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="spo2-during-run-example"/>
+  <meta>
+    <profile value="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-oxygen-saturation"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation spo2-during-run-example</b></p><a name="spo2-during-run-example"> </a><a name="hcspo2-during-run-example"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-irun-oxygen-saturation.html">Interoperability Run - oxygen saturation (SpO2)</a></p></div><blockquote><p><b>Interoperability Run context</b></p><ul><li>eventType: <a href="CodeSystem-irun-event-type.html#irun-event-type-wgm">Interoperability Run - event type: wgm</a> (HL7 Working Group Meeting)</li><li>eventName: HL7 Europe WGM Malaga 2026</li><li>phase: <a href="CodeSystem-irun-phase.html#irun-phase-during-run">Interoperability Run - measurement phase: during-run</a> (During the run)</li><li>location: <a href="Location-malaga-course-example.html">Malaga seafront run course</a></li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 2708-6}">Oxygen saturation in Arterial blood</span></p><p><b>subject</b>: <a href="Patient-runner-example.html">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p><p><b>effective</b>: 2026-11-18 07:45:00+0100</p><p><b>value</b>: 96 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p><p><b>device</b>: <a href="Device-wearable-example.html">Device: manufacturer = Example Wearables Ltd; modelNumber = SW-1; type = Wrist-worn fitness tracker with heart rate, SpO2 and single-lead ECG</a></p></div>
+  </text>
+  <extension url="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context">
+    <extension url="eventType">
+      <valueCoding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+        <code value="wgm"/>
+      </valueCoding>
+    </extension>
+    <extension url="eventName">
+      <valueString value="HL7 Europe WGM Malaga 2026"/>
+    </extension>
+    <extension url="phase">
+      <valueCoding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+        <code value="during-run"/>
+      </valueCoding>
+    </extension>
+    <extension url="location">
+      <valueReference>
+        <reference value="Location/malaga-course-example"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="2708-6"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/runner-example"/>
+  </subject>
+  <effectiveDateTime value="2026-11-18T07:45:00+01:00"/>
+  <valueQuantity>
+    <value value="96"/>
+    <unit value="%"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="%"/>
+  </valueQuantity>
+  <device>
+    <reference value="Device/wearable-example"/>
+  </device>
+</Observation>

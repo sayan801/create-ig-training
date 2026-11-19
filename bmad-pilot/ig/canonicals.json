@@ -1,0 +1,133 @@
+[{
+  "id" : "irun-event-type",
+  "type" : "CodeSystem",
+  "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type",
+  "version" : "0.1.0",
+  "name" : "IRunEventTypeCS"
+},
+{
+  "id" : "irun-exercise",
+  "type" : "CodeSystem",
+  "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+  "version" : "0.1.0",
+  "name" : "IRunExerciseCS"
+},
+{
+  "id" : "irun-phase",
+  "type" : "CodeSystem",
+  "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase",
+  "version" : "0.1.0",
+  "name" : "IRunPhaseCS"
+},
+{
+  "id" : "org.fhir.eu.interoperabilityrun",
+  "type" : "ImplementationGuide",
+  "url" : "https://example.org/ig/interoperabilityrun/ImplementationGuide/org.fhir.eu.interoperabilityrun",
+  "version" : "0.1.0",
+  "name" : "InteroperabilityRunIG"
+},
+{
+  "id" : "irun-appointment",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-appointment",
+  "version" : "0.1.0",
+  "name" : "IRunAppointment"
+},
+{
+  "id" : "irun-context",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context",
+  "version" : "0.1.0",
+  "name" : "IRunContext"
+},
+{
+  "id" : "irun-ecg",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-ecg",
+  "version" : "0.1.0",
+  "name" : "IRunECG"
+},
+{
+  "id" : "irun-environment-conditions",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-environment-conditions",
+  "version" : "0.1.0",
+  "name" : "IRunEnvironmentConditions"
+},
+{
+  "id" : "irun-exercise-session",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-exercise-session",
+  "version" : "0.1.0",
+  "name" : "IRunExerciseSession"
+},
+{
+  "id" : "irun-heart-rate",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-heart-rate",
+  "version" : "0.1.0",
+  "name" : "IRunHeartRate"
+},
+{
+  "id" : "irun-location",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-location",
+  "version" : "0.1.0",
+  "name" : "IRunLocation"
+},
+{
+  "id" : "irun-oxygen-saturation",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-oxygen-saturation",
+  "version" : "0.1.0",
+  "name" : "IRunOxygenSaturation"
+},
+{
+  "id" : "irun-preventive-careplan",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-preventive-careplan",
+  "version" : "0.1.0",
+  "name" : "IRunPreventiveCarePlan"
+},
+{
+  "id" : "irun-report",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-report",
+  "version" : "0.1.0",
+  "name" : "IRunReport"
+},
+{
+  "id" : "irun-runner",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-runner",
+  "version" : "0.1.0",
+  "name" : "IRunRunner"
+},
+{
+  "id" : "irun-wearable-device",
+  "type" : "StructureDefinition",
+  "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-wearable-device",
+  "version" : "0.1.0",
+  "name" : "IRunWearableDevice"
+},
+{
+  "id" : "irun-event-type",
+  "type" : "ValueSet",
+  "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type",
+  "version" : "0.1.0",
+  "name" : "IRunEventTypeVS"
+},
+{
+  "id" : "irun-phase",
+  "type" : "ValueSet",
+  "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-phase",
+  "version" : "0.1.0",
+  "name" : "IRunPhaseVS"
+},
+{
+  "id" : "irun-session-type",
+  "type" : "ValueSet",
+  "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type",
+  "version" : "0.1.0",
+  "name" : "IRunSessionTypeVS"
+}]
