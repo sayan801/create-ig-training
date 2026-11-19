@@ -45,3 +45,17 @@ The HL7 Europe base package (`hl7.fhir.eu.base` 2.0.1) does not define vital-sig
 ### Acknowledgements
 
 The exercise session, care plan, appointment and report, and the environmental conditions (air and water temperature, humidity), were added after feedback from participants of the Malaga Interoperability Run group.
+
+### Code verification
+
+All external codes used in this IG were checked on 19 Nov 2026 (not taken on trust from an AI agent's memory):
+
+| Code | System | Display | Checked against |
+|---|---|---|---|
+| 8867-4 | LOINC | Heart rate | tx.fhir.org `$lookup`: active |
+| 2708-6 | LOINC | Oxygen saturation in Arterial blood | tx.fhir.org `$lookup`: active |
+| 59408-5 | LOINC | Oxygen saturation in Arterial blood by Pulse oximetry | tx.fhir.org `$lookup`: active |
+| 11524-6 | LOINC | EKG study | tx.fhir.org `$lookup`: active |
+| 55411-3 | LOINC | Exercise duration | tx.fhir.org `$lookup`: active |
+| 131329 | ISO/IEEE 11073 MDC | MDC_ECG_ELEC_POTL_I | FHIR R4 example Observation `ekg` (MDC is not on tx.fhir.org) |
+| `/min`, `%`, `mV`, `min`, `km`, `min/km`, `Cel` | UCUM | | tx.fhir.org `$validate-code`: valid |
