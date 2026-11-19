@@ -1,7 +1,7 @@
 # Documentation about this page: https://fshschool.org/docs/sushi/configuration/
 
-id: org.fhir.[realm:uv|fr|...].[code]
-canonical: https://example.org/ig/[code] # the last part of canonical and id must be the same
+id: org.fhir.eu.interoperabilityrun
+canonical: https://example.org/ig/interoperabilityrun # the last part of canonical and id must be the same
 name: ExampleIG # Should be an acronym
 title: IG Example
 description: Description du projet
