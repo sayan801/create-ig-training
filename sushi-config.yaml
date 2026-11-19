@@ -2,23 +2,25 @@
 
 id: org.fhir.eu.interoperabilityrun
 canonical: https://example.org/ig/interoperabilityrun # the last part of canonical and id must be the same
-name: ExampleIG # Should be an acronym
-title: IG Example
-description: Description du projet
+name: InteroperabilityRunIG # Should be an acronym
+title: Interoperability Run IG
+description: Captures vital-sign observations (heart rate, SpO2, ECG) recorded by wearable devices during the Interoperability Run held at HL7 Working Group Meetings, Connectathons and DevDays.
 publisher:
   name: Work Group Meeting HL7 Europe Malaga
   url: https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/
 status: draft # draft | active | retired | unknown
 version: 0.1.0 # shall conforms to Semantic Versioning https://fr.wiktionary.org/wiki/SemVer
 fhirVersion: 4.0.1
-copyrightYear: 2020+
+copyrightYear: 2026+
 releaseLabel: ci-build 
 
-jurisdiction: urn:iso:std:iso:3166#FR "France (la)"
+jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#150 "Europe"
+
+dependencies:
+  hl7.fhir.eu.base: 2.0.1
 
 parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html
     shownav: 'true'
-    path-expansion-params: '../../expansion-params.json' # for using French SNOMED CT Extension
     pin-canonicals: pin-all
     path-suppressed-warnings: input/ignoreWarnings.txt
     apply-contact: true
@@ -29,12 +31,8 @@ parameters: #Parameters list - https://build.fhir.org/ig/FHIR/fhir-tools-ig/Code
       - generate #generate: Log when producing an individual resource (troubleshooting only - leave off)
       - init #init: Messages describing the start up process (for debugging)
       - progress #progress: Overall progress messages
-    i18n-default-lang: fr # Default language
+    i18n-default-lang: en # Default language
     apply-jurisdiction: true
-    i18n-lang:
-      - en
-    translation-sources:
-      - input/translations/en
 
 
 pages:
