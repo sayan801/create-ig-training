@@ -42,4 +42,18 @@ Description: "Codes for the run session and its measurements where no suitable L
 * #run-session "Run session" "A completed Interoperability Run session (exercise summary)."
 * #distance "Distance run" "Total distance covered during the run."
 * #average-pace "Average pace" "Average time per kilometre."
+* #swim-session "Swim session" "A completed swim session (e.g. an open-water swim alongside the run)."
+* #environment-conditions "Environmental conditions" "Weather and water conditions at the course during the event."
+* #air-temperature "Air temperature" "Outdoor air temperature at the course."
+* #relative-humidity "Relative humidity" "Outdoor relative air humidity at the course."
+* #water-temperature "Water temperature" "Water temperature for swimmers."
+* #run-report "Interoperability Run report" "Summary report of a participant's run: vital signs, ECG, session and conditions."
 * #preventive-checkup "Preventive check-up" "Preventive care check-up around the Interoperability Run (vital signs before and after the run)."
+
+ValueSet: IRunSessionTypeVS
+Id: irun-session-type
+Title: "Interoperability Run - session types"
+Description: "Kinds of exercise session: run or swim."
+* ^experimental = true
+* IRunExerciseCS#run-session
+* IRunExerciseCS#swim-session

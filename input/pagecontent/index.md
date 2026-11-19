@@ -43,6 +43,8 @@ This IG shows how to exchange those measurements in FHIR, so that data from diff
   * heart rate, peripheral oxygen saturation (SpO2) and ECG recordings taken before, during and after the run, with the event and measurement phase
   * the run session itself: place, duration, distance and pace
   * the scheduled run as an appointment, and a light preventive care plan around it
+  * environmental conditions: air temperature, humidity and water temperature (for swimmers)
+  * a participant report bringing all results together
 * **Out of scope:** clinical interpretation, diagnosis and full GPS tracks.
 
 All data in this guide are fictional and are **not intended for clinical use**.

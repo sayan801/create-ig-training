@@ -111,6 +111,7 @@ Usage: #example
 * extension[runContext].extension[phase].valueCoding = IRunPhaseCS#during-run
 * extension[runContext].extension[location].valueReference = Reference(malaga-course-example)
 * status = #final
+* code = IRunExerciseCS#run-session
 * subject = Reference(runner-example)
 * effectivePeriod.start = "2026-11-18T07:30:00+01:00"
 * effectivePeriod.end = "2026-11-18T08:02:00+01:00"
@@ -156,3 +157,37 @@ Usage: #example
 * activity[3].detail.code = $loinc#11524-6 "EKG study"
 * activity[3].detail.status = #completed
 * activity[3].detail.description = "Single-lead ECG right after the finish"
+
+Instance: environment-conditions-example
+InstanceOf: IRunEnvironmentConditions
+Title: "Example environmental conditions at the course"
+Description: "Air temperature, humidity and sea water temperature at the Malaga seafront during the run (illustrative values)."
+Usage: #example
+* extension[runContext].extension[eventType].valueCoding = IRunEventTypeCS#wgm
+* extension[runContext].extension[eventName].valueString = "HL7 Europe WGM Malaga 2026"
+* extension[runContext].extension[phase].valueCoding = IRunPhaseCS#during-run
+* extension[runContext].extension[location].valueReference = Reference(malaga-course-example)
+* status = #final
+* subject = Reference(malaga-course-example)
+* effectiveDateTime = "2026-11-18T07:30:00+01:00"
+* component[airTemperature].valueQuantity.value = 14
+* component[relativeHumidity].valueQuantity.value = 72
+* component[waterTemperature].valueQuantity.value = 18
+
+Instance: run-report-example
+InstanceOf: IRunReport
+Title: "Example participant report"
+Description: "The runner's Interoperability Run report: resting and running heart rate, SpO2, ECG after the run, run session and conditions."
+Usage: #example
+* status = #final
+* subject = Reference(runner-example)
+* effectivePeriod.start = "2026-11-18T07:25:00+01:00"
+* effectivePeriod.end = "2026-11-18T08:05:30+01:00"
+* issued = "2026-11-18T09:00:00+01:00"
+* result[0] = Reference(heart-rate-pre-run-example)
+* result[1] = Reference(heart-rate-during-run-example)
+* result[2] = Reference(spo2-during-run-example)
+* result[3] = Reference(ecg-post-run-example)
+* result[4] = Reference(exercise-session-example)
+* result[5] = Reference(environment-conditions-example)
+* conclusion = "5.2 km in 32 min (6:09 min/km) at 14 °C and 72% humidity. Heart rate rose from 64 to 152 /min, SpO2 stayed at 96%. Illustrative data, not for clinical use."

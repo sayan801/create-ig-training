@@ -79,12 +79,13 @@ Profile: IRunExerciseSession
 Parent: Observation
 Id: irun-exercise-session
 Title: "Interoperability Run - exercise session"
-Description: "Summary of the run itself: where it took place, how long it lasted and how far the runner went."
+Description: "Summary of the exercise session (run, or swim for the swimmers): where it took place, how long it lasted and how far the participant went."
 * extension contains IRunContext named runContext 1..1 MS
 * status MS
 * category 1..* MS
 * category = $obs-category#activity
-* code = IRunExerciseCS#run-session
+* code from IRunSessionTypeVS (required)
+* code ^short = "Run session or swim session"
 * subject 1..1 MS
 * subject only Reference(IRunRunner)
 * effective[x] 1..1 MS
@@ -152,3 +153,54 @@ Description: "A light preventive care plan for a runner: check vital signs befor
 * activity.detail MS
 * activity.detail.code MS
 * activity.detail.status MS
+
+Profile: IRunEnvironmentConditions
+Parent: Observation
+Id: irun-environment-conditions
+Title: "Interoperability Run - environmental conditions"
+Description: "Weather and water conditions at the course during an Interoperability Run: air temperature, relative humidity and, for swimmers, water temperature. The subject is the course (Location)."
+* extension contains IRunContext named runContext 1..1 MS
+* status MS
+* code = IRunExerciseCS#environment-conditions
+* subject 1..1 MS
+* subject only Reference(IRunLocation)
+* effective[x] 1..1 MS
+* effective[x] only dateTime or Period
+* device MS
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains
+    airTemperature 0..1 MS and
+    relativeHumidity 0..1 MS and
+    waterTemperature 0..1 MS
+* component[airTemperature].code = IRunExerciseCS#air-temperature
+* component[airTemperature].value[x] only Quantity
+* component[airTemperature].valueQuantity = $ucum#Cel "°C"
+* component[relativeHumidity].code = IRunExerciseCS#relative-humidity
+* component[relativeHumidity].value[x] only Quantity
+* component[relativeHumidity].valueQuantity = $ucum#% "%"
+* component[waterTemperature].code = IRunExerciseCS#water-temperature
+* component[waterTemperature].value[x] only Quantity
+* component[waterTemperature].valueQuantity = $ucum#Cel "°C"
+* component ^short = "Air temperature, humidity, water temperature (swimmers)"
+
+Profile: IRunReport
+Parent: DiagnosticReport
+Id: irun-report
+Title: "Interoperability Run - participant report"
+Description: "A report for one participant of an Interoperability Run, bringing together the vital signs, ECG, exercise session and environmental conditions, with a short (non-clinical) conclusion."
+* status MS
+* category 1..* MS
+* category = IRunExerciseCS#preventive-checkup
+* code = IRunExerciseCS#run-report
+* subject 1..1 MS
+* subject only Reference(IRunRunner)
+* effective[x] 1..1 MS
+* effective[x] only Period
+* issued MS
+* result 1..* MS
+* result only Reference(IRunHeartRate or IRunOxygenSaturation or IRunECG or IRunExerciseSession or IRunEnvironmentConditions)
+* conclusion MS
+* presentedForm MS
+* presentedForm ^short = "Optional rendered report (e.g. PDF)"
