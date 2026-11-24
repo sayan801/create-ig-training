@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CarePlan xmlns="http://hl7.org/fhir">
+  <id value="preventive-careplan-example"/>
+  <meta>
+    <profile value="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-preventive-careplan"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CarePlan preventive-careplan-example</b></p><a name="preventive-careplan-example"> </a><a name="hcpreventive-careplan-example"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-irun-preventive-careplan.html">Interoperability Run - preventive care plan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title="Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise preventive-checkup}">Preventive check-up</span></p><p><b>title</b>: Interoperability Run preventive check-up</p><p><b>description</b>: Measure resting heart rate and SpO2 before the run, join the run, then record recovery heart rate and a single-lead ECG after the finish.</p><p><b>subject</b>: <a href="Patient-runner-example.html">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p><p><b>period</b>: 2026-11-18 07:00:00+0100 --&gt; 2026-11-18 09:00:00+0100</p><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href="Appointment-run-appointment-example.html">Appointment: status = booked; serviceType = Interoperability Run; description = Interoperability Run - HL7 Europe WGM Malaga 2026, meeting point in front of the hotel; start = 2026-11-18 07:30:00+0100; end = 2026-11-18 08:15:00+0100</a></p></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 8867-4}">Heart rate</span></td><td>Completed</td><td>Resting and recovery heart rate (before and after the run)</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 2708-6}">Oxygen saturation in Arterial blood</span></td><td>Completed</td><td>SpO2 before and during the run</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{http://loinc.org 11524-6}">EKG study</span></td><td>Completed</td><td>Single-lead ECG right after the finish</td></tr></table></blockquote></div>
+  </text>
+  <status value="active"/>
+  <intent value="plan"/>
+  <category>
+    <coding>
+      <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+      <code value="preventive-checkup"/>
+    </coding>
+  </category>
+  <title value="Interoperability Run preventive check-up"/>
+  <description value="Measure resting heart rate and SpO2 before the run, join the run, then record recovery heart rate and a single-lead ECG after the finish."/>
+  <subject>
+    <reference value="Patient/runner-example"/>
+  </subject>
+  <period>
+    <start value="2026-11-18T07:00:00+01:00"/>
+    <end value="2026-11-18T09:00:00+01:00"/>
+  </period>
+  <activity>
+    <reference>
+      <reference value="Appointment/run-appointment-example"/>
+    </reference>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="8867-4"/>
+          <display value="Heart rate"/>
+        </coding>
+      </code>
+      <status value="completed"/>
+      <description value="Resting and recovery heart rate (before and after the run)"/>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="2708-6"/>
+          <display value="Oxygen saturation in Arterial blood"/>
+        </coding>
+      </code>
+      <status value="completed"/>
+      <description value="SpO2 before and during the run"/>
+    </detail>
+  </activity>
+  <activity>
+    <detail>
+      <code>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="11524-6"/>
+          <display value="EKG study"/>
+        </coding>
+      </code>
+      <status value="completed"/>
+      <description value="Single-lead ECG right after the finish"/>
+    </detail>
+  </activity>
+</CarePlan>

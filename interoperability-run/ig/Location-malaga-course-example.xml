@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="malaga-course-example"/>
+  <meta>
+    <profile value="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Location malaga-course-example</b></p><a name="malaga-course-example"> </a><a name="hcmalaga-course-example"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-irun-location.html">Interoperability Run - location</a></p></div><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Malaga seafront run course</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="The status of the location">Status:</td><td colspan="3">Active</td></tr><tr><td style="background-color: #f3f5da" title="Additional details about the location that could be displayed as further information to identify it">Description:</td><td colspan="3">Meeting point in front of the meeting hotel; out-and-back course along the seafront (illustrative).</td></tr><tr><td style="background-color: #f3f5da" title="Physical location">Address:</td><td colspan="3">Malaga ES </td></tr><tr><td style="background-color: #f3f5da" title="The latitude and longitude of the location (WGS84)">Position:</td><td colspan="3">36.7177, -4.4258</td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <name value="Malaga seafront run course"/>
+  <description value="Meeting point in front of the meeting hotel; out-and-back course along the seafront (illustrative)."/>
+  <address>
+    <city value="Malaga"/>
+    <country value="ES"/>
+  </address>
+  <position>
+    <longitude value="-4.4258"/>
+    <latitude value="36.7177"/>
+  </position>
+</Location>

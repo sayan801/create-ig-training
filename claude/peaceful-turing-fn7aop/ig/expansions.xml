@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="4b91326e-e53e-4d14-9ad8-46398adb6558"/>
+  <meta>
+    <lastUpdated value="2026-11-24T10:14:58.935+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-irun-event-type.html">codesystem Interoperability Run - event type v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type-wgm"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-event-type.html#irun-event-type-wgm">wgm</a>
+                </td>
+                <td>HL7 Working Group Meeting</td>
+                <td>An HL7 International or HL7 Europe Working Group Meeting.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;wgm&quot;, &quot;display&quot;: &quot;HL7 Working Group Meeting&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;wgm&quot;/&gt;&lt;display value=&quot;HL7 Working Group Meeting&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type-connectathon"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-event-type.html#irun-event-type-connectathon">connectathon</a>
+                </td>
+                <td>Connectathon</td>
+                <td>An HL7 FHIR Connectathon or IHE Connectathon.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;connectathon&quot;, &quot;display&quot;: &quot;Connectathon&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;connectathon&quot;/&gt;&lt;display value=&quot;Connectathon&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type-devdays"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-event-type.html#irun-event-type-devdays">devdays</a>
+                </td>
+                <td>FHIR DevDays</td>
+                <td>A FHIR DevDays conference.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;devdays&quot;, &quot;display&quot;: &quot;FHIR DevDays&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;devdays&quot;/&gt;&lt;display value=&quot;FHIR DevDays&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type-other"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-event-type.html#irun-event-type-other">other</a>
+                </td>
+                <td>Other event</td>
+                <td>Any other community event hosting an Interoperability Run.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;other&quot;, &quot;display&quot;: &quot;Other event&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;other&quot;/&gt;&lt;display value=&quot;Other event&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type"/>
+        <version value="0.1.0"/>
+        <name value="IRunEventTypeVS"/>
+        <title value="Interoperability Run - event types"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-24T10:14:58+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="150"/>
+            <display value="Europe"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0a0563ee-6847-4f1f-9eff-e966b20fcfb7"/>
+          <timestamp value="2026-11-24T10:15:32+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+            <code value="wgm"/>
+            <display value="HL7 Working Group Meeting"/>
+          </contains>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+            <code value="connectathon"/>
+            <display value="Connectathon"/>
+          </contains>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+            <code value="devdays"/>
+            <display value="FHIR DevDays"/>
+          </contains>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+            <code value="other"/>
+            <display value="Other event"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/ig/interoperabilityrun/ValueSet/irun-phase"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-irun-phase.html">codesystem Interoperability Run - measurement phase v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 3 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase-pre-run"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-phase.html#irun-phase-pre-run">pre-run</a>
+                </td>
+                <td>Before the run</td>
+                <td>Baseline measurement taken at rest before the start.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;pre-run&quot;, &quot;display&quot;: &quot;Before the run&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;pre-run&quot;/&gt;&lt;display value=&quot;Before the run&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase-during-run"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-phase.html#irun-phase-during-run">during-run</a>
+                </td>
+                <td>During the run</td>
+                <td>Measurement taken while running.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;during-run&quot;, &quot;display&quot;: &quot;During the run&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;during-run&quot;/&gt;&lt;display value=&quot;During the run&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase-post-run"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-phase.html#irun-phase-post-run">post-run</a>
+                </td>
+                <td>After the run</td>
+                <td>Recovery measurement taken after the finish.</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;post-run&quot;, &quot;display&quot;: &quot;After the run&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;post-run&quot;/&gt;&lt;display value=&quot;After the run&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://example.org/ig/interoperabilityrun/ValueSet/irun-phase"/>
+        <version value="0.1.0"/>
+        <name value="IRunPhaseVS"/>
+        <title value="Interoperability Run - measurement phases"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-24T10:14:58+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="150"/>
+            <display value="Europe"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:06b7c720-3fdf-48ac-bb9e-9acaacfd41b3"/>
+          <timestamp value="2026-11-24T10:15:32+00:00"/>
+          <total value="3"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+            <code value="pre-run"/>
+            <display value="Before the run"/>
+          </contains>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+            <code value="during-run"/>
+            <display value="During the run"/>
+          </contains>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+            <code value="post-run"/>
+            <display value="After the run"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-irun-exercise.html">codesystem Interoperability Run - exercise codes v0.1.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise|0.1.0" title="Click to Copy URL" class="btn-copy" aria-label="copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise-run-session"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-exercise.html#irun-exercise-run-session">run-session</a>
+                </td>
+                <td>Run session</td>
+                <td>A completed Interoperability Run session (exercise summary).</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;run-session&quot;, &quot;display&quot;: &quot;Run session&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;run-session&quot;/&gt;&lt;display value=&quot;Run session&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise-swim-session"> </a>
+                  <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-irun-exercise.html#irun-exercise-swim-session">swim-session</a>
+                </td>
+                <td>Swim session</td>
+                <td>A completed swim session (e.g. an open-water swim alongside the run).</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise&quot;, &quot;version&quot;: &quot;0.1.0&quot;, &quot;code&quot;: &quot;swim-session&quot;, &quot;display&quot;: &quot;Swim session&quot;}" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise&quot;/&gt;&lt;version value=&quot;0.1.0&quot;/&gt;&lt;code value=&quot;swim-session&quot;/&gt;&lt;display value=&quot;Swim session&quot;/&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy" aria-label="copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type"/>
+        <version value="0.1.0"/>
+        <name value="IRunSessionTypeVS"/>
+        <title value="Interoperability Run - session types"/>
+        <status value="draft"/>
+        <experimental value="true"/>
+        <date value="2026-11-24T10:14:58+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="150"/>
+            <display value="Europe"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:ee94cef3-be3c-49a3-9bf5-eaaf2dc7ad74"/>
+          <timestamp value="2026-11-24T10:15:32+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+            <code value="run-session"/>
+            <display value="Run session"/>
+          </contains>
+          <contains>
+            <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+            <code value="swim-session"/>
+            <display value="Swim session"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

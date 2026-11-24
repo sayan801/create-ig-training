@@ -1,0 +1,7 @@
+{
+  "version" : "0.1.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20261124101458",
+  "name" : "org.fhir.eu.interoperabilityrun",
+  "jurisdiction" : "http://unstats.un.org/unsd/methods/m49/m49.htm#150"
+}

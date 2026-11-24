@@ -1,0 +1,38 @@
+{
+  "codeSystems" : [{
+    "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunEventTypeVS",
+    "title" : "Interoperability Run - event types",
+    "description" : "All event types for an Interoperability Run.",
+    "systems" : ["https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-context.html" : "Interoperability Run context"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-phase",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunPhaseVS",
+    "title" : "Interoperability Run - measurement phases",
+    "description" : "All measurement phases for an Interoperability Run.",
+    "systems" : ["https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-context.html" : "Interoperability Run context"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunSessionTypeVS",
+    "title" : "Interoperability Run - session types",
+    "description" : "Kinds of exercise session: run or swim.",
+    "systems" : ["https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"],
+    "uses" : {
+    },
+    "StructureDefinition-irun-exercise-session.html" : "Interoperability Run - exercise session"
+  }]
+}

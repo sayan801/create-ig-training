@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Used
+https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type,0.1.0,draft,,IRunEventTypeCS,Interoperability Run - event type,"The kind of community event at which an Interoperability Run takes place.","ValueSet/irun-event-type"
+https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise,0.1.0,draft,,IRunExerciseCS,Interoperability Run - exercise codes,"Codes for the run session and its measurements where no suitable LOINC code is used in this training IG.","ValueSet/irun-session-type"
+https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase,0.1.0,draft,,IRunPhaseCS,Interoperability Run - measurement phase,"When, relative to the run, a measurement was taken.","ValueSet/irun-phase"

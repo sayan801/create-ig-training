@@ -1,0 +1,91 @@
+{
+  "resourceType" : "Observation",
+  "id" : "environment-conditions-example",
+  "meta" : {
+    "profile" : ["https://example.org/ig/interoperabilityrun/StructureDefinition/irun-environment-conditions"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation environment-conditions-example</b></p><a name=\"environment-conditions-example\"> </a><a name=\"hcenvironment-conditions-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-environment-conditions.html\">Interoperability Run - environmental conditions</a></p></div><blockquote><p><b>Interoperability Run context</b></p><ul><li>eventType: <a href=\"CodeSystem-irun-event-type.html#irun-event-type-wgm\">Interoperability Run - event type: wgm</a> (HL7 Working Group Meeting)</li><li>eventName: HL7 Europe WGM Malaga 2026</li><li>phase: <a href=\"CodeSystem-irun-phase.html#irun-phase-during-run\">Interoperability Run - measurement phase: during-run</a> (During the run)</li><li>location: <a href=\"Location-malaga-course-example.html\">Malaga seafront run course</a></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise environment-conditions}\">Environmental conditions</span></p><p><b>subject</b>: <a href=\"Location-malaga-course-example.html\">Malaga seafront run course</a></p><p><b>effective</b>: 2026-11-18 07:30:00+0100</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise air-temperature}\">Air temperature</span></p><p><b>value</b>: 14 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise relative-humidity}\">Relative humidity</span></p><p><b>value</b>: 72 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise water-temperature}\">Water temperature</span></p><p><b>value</b>: 18 °C<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "eventType",
+      "valueCoding" : {
+        "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type",
+        "code" : "wgm"
+      }
+    },
+    {
+      "url" : "eventName",
+      "valueString" : "HL7 Europe WGM Malaga 2026"
+    },
+    {
+      "url" : "phase",
+      "valueCoding" : {
+        "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase",
+        "code" : "during-run"
+      }
+    },
+    {
+      "url" : "location",
+      "valueReference" : {
+        "reference" : "Location/malaga-course-example"
+      }
+    }],
+    "url" : "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context"
+  }],
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+      "code" : "environment-conditions"
+    }]
+  },
+  "subject" : {
+    "reference" : "Location/malaga-course-example"
+  },
+  "effectiveDateTime" : "2026-11-18T07:30:00+01:00",
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+        "code" : "air-temperature"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 14,
+      "unit" : "°C",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "Cel"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+        "code" : "relative-humidity"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 72,
+      "unit" : "%",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "%"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+        "code" : "water-temperature"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 18,
+      "unit" : "°C",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "Cel"
+    }
+  }]
+}

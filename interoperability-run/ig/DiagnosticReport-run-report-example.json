@@ -1,0 +1,51 @@
+{
+  "resourceType" : "DiagnosticReport",
+  "id" : "run-report-example",
+  "meta" : {
+    "profile" : ["https://example.org/ig/interoperabilityrun/StructureDefinition/irun-report"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: DiagnosticReport run-report-example</b></p><a name=\"run-report-example\"> </a><a name=\"hcrun-report-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-report.html\">Interoperability Run - participant report</a></p></div><h2><span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise run-report}\">Interoperability Run report</span> (<span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise preventive-checkup}\">Preventive check-up</span>) </h2><table class=\"grid\"><tr><td>Subject</td><td>Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</td></tr><tr><td>Relevant Time</td><td>2026-11-18 07:25:00+0100 --&gt; 2026-11-18 08:05:30+0100</td></tr><tr><td>Reported</td><td>2026-11-18 09:00:00+0100</td></tr></table><p><b>Report Details</b></p><table class=\"grid\"><tr><td><b>Code</b></td><td><b>Value</b></td><td><b>Flags</b></td><td><b>Relevant Time</b></td></tr><tr><td><a href=\"Observation-heart-rate-pre-run-example.html\"><span title=\"Codes:{http://loinc.org 8867-4}\">Heart rate</span></a></td><td>64 beats/minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>Final</td><td>2026-11-18 07:25:00+0100</td></tr><tr><td><a href=\"Observation-heart-rate-during-run-example.html\"><span title=\"Codes:{http://loinc.org 8867-4}\">Heart rate</span></a></td><td>152 beats/minute<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code/min = '/min')</span></td><td>Final</td><td>2026-11-18 07:45:00+0100</td></tr><tr><td><a href=\"Observation-spo2-during-run-example.html\"><span title=\"Codes:{http://loinc.org 2708-6}\">Oxygen saturation in Arterial blood</span></a></td><td>96 %<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM  code% = '%')</span></td><td>Final</td><td>2026-11-18 07:45:00+0100</td></tr><tr><td><a href=\"Observation-ecg-post-run-example.html\"><span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></a></td><td/><td>Final</td><td>2026-11-18 08:05:00+0100 --&gt; 2026-11-18 08:05:30+0100</td></tr><tr><td><a href=\"Observation-exercise-session-example.html\"><span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise run-session}\">Run session</span></a></td><td/><td>Final</td><td>2026-11-18 07:30:00+0100 --&gt; 2026-11-18 08:02:00+0100</td></tr><tr><td><a href=\"Observation-environment-conditions-example.html\"><span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise environment-conditions}\">Environmental conditions</span></a></td><td/><td>Final</td><td>2026-11-18 07:30:00+0100</td></tr></table><p>5.2 km in 32 min (6:09 min/km) at 14 °C and 72% humidity. Heart rate rose from 64 to 152 /min, SpO2 stayed at 96%. Illustrative data, not for clinical use.</p></div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+      "code" : "preventive-checkup"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+      "code" : "run-report"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/runner-example"
+  },
+  "effectivePeriod" : {
+    "start" : "2026-11-18T07:25:00+01:00",
+    "end" : "2026-11-18T08:05:30+01:00"
+  },
+  "issued" : "2026-11-18T09:00:00+01:00",
+  "result" : [{
+    "reference" : "Observation/heart-rate-pre-run-example"
+  },
+  {
+    "reference" : "Observation/heart-rate-during-run-example"
+  },
+  {
+    "reference" : "Observation/spo2-during-run-example"
+  },
+  {
+    "reference" : "Observation/ecg-post-run-example"
+  },
+  {
+    "reference" : "Observation/exercise-session-example"
+  },
+  {
+    "reference" : "Observation/environment-conditions-example"
+  }],
+  "conclusion" : "5.2 km in 32 min (6:09 min/km) at 14 °C and 72% humidity. Heart rate rose from 64 to 152 /min, SpO2 stayed at 96%. Illustrative data, not for clinical use."
+}

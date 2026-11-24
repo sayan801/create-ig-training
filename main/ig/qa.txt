@@ -1,0 +1,29 @@
+ExampleIG : Validation Results
+=========================================
+
+err = 1, warn = 11, info = 1, broken links = 0
+IG Publisher Version: 3.0.4
+Generated Thu Nov 19 10:52:41 UTC 2026. FHIR version 4.0.1 for org.fhir.eu.interoperabilityrun#0.1.0 (canonical = https://example.org/ig/interoperabilityrun)
+ Build Errors : 0 / 11 / 0
+ /__w/create-ig-training/create-ig-training/igSource/fsh-generated/resources/ImplementationGuide-org.fhir.eu.interoperabilityrun : 1 / 0 / 2
+</table>
+
+== n/a ==
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</a>" expecting "</img>" at line 34 column 177
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 79 column 10
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 80 column 9
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 109 column 8
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 111 column 12
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 112 column 20
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 113 column 16
+WARNING: /__w/create-ig-training/create-ig-training/igSource/output/searchform.html: The html source is not well formed: Found "</div>" expecting "</body>" at line 115 column 12
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 5: The HTML fragment 'expansion-params.xhtml' is not included anywhere in the produced implementation guide
+
+
+== fsh-generated/resources/ImplementationGuide-org.fhir.eu.interoperabilityrun.json ==
+ERROR: ImplementationGuide/org.fhir.eu.interoperabilityrun: ImplementationGuide.definition: ImplementationGuide.definition.resource: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/ImplementationGuide|4.0.1)
+INFORMATION: Resource: The resource ImplementationGuide/org.fhir.eu.interoperabilityrun could usefully have an OID assigned (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/ig-guidance/oids.html)
+
+

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="irun-event-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem irun-event-type</b></p><a name="irun-event-type"> </a><a name="hcirun-event-type"> </a><p>This case-sensitive code system <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">wgm<a name="irun-event-type-wgm"> </a></td><td>HL7 Working Group Meeting</td><td>An HL7 International or HL7 Europe Working Group Meeting.</td></tr><tr><td style="white-space:nowrap">connectathon<a name="irun-event-type-connectathon"> </a></td><td>Connectathon</td><td>An HL7 FHIR Connectathon or IHE Connectathon.</td></tr><tr><td style="white-space:nowrap">devdays<a name="irun-event-type-devdays"> </a></td><td>FHIR DevDays</td><td>A FHIR DevDays conference.</td></tr><tr><td style="white-space:nowrap">other<a name="irun-event-type-other"> </a></td><td>Other event</td><td>Any other community event hosting an Interoperability Run.</td></tr></table></div>
+  </text>
+  <url value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+  <version value="0.1.0"/>
+  <name value="IRunEventTypeCS"/>
+  <title value="Interoperability Run - event type"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-24T10:14:58+00:00"/>
+  <publisher value="Work Group Meeting HL7 Europe Malaga"/>
+  <contact>
+    <name value="Work Group Meeting HL7 Europe Malaga"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/"/>
+    </telecom>
+  </contact>
+  <description value="The kind of community event at which an Interoperability Run takes place."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="wgm"/>
+    <display value="HL7 Working Group Meeting"/>
+    <definition value="An HL7 International or HL7 Europe Working Group Meeting."/>
+  </concept>
+  <concept>
+    <code value="connectathon"/>
+    <display value="Connectathon"/>
+    <definition value="An HL7 FHIR Connectathon or IHE Connectathon."/>
+  </concept>
+  <concept>
+    <code value="devdays"/>
+    <display value="FHIR DevDays"/>
+    <definition value="A FHIR DevDays conference."/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="Other event"/>
+    <definition value="Any other community event hosting an Interoperability Run."/>
+  </concept>
+</CodeSystem>

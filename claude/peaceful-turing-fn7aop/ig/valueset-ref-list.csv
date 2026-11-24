@@ -1,0 +1,4 @@
+URL,Version,Status,OIDs,Name,Title,Description,Uses,Used,Sources
+https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type,0.1.0,draft,,IRunEventTypeVS,Interoperability Run - event types,"All event types for an Interoperability Run.","StructureDefinition/irun-context","Internal"
+https://example.org/ig/interoperabilityrun/ValueSet/irun-phase,0.1.0,draft,,IRunPhaseVS,Interoperability Run - measurement phases,"All measurement phases for an Interoperability Run.","StructureDefinition/irun-context","Internal"
+https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type,0.1.0,draft,,IRunSessionTypeVS,Interoperability Run - session types,"Kinds of exercise session: run or swim.","StructureDefinition/irun-exercise-session","Internal"

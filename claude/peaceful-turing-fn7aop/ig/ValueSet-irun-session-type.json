@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "irun-session-type",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet irun-session-type</b></p><a name=\"irun-session-type\"> </a><a name=\"hcirun-session-type\"> </a><ul><li>Include these codes as defined in <a href=\"CodeSystem-irun-exercise.html\"><code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise</code></a><span title=\"Version is explicitly stated to be 0.1.0\"> version &#x1F4CD;0.1.0</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-irun-exercise.html#irun-exercise-run-session\">run-session</a></td><td style=\"color: #cccccc\">Run session</td><td>A completed Interoperability Run session (exercise summary).</td></tr><tr><td><a href=\"CodeSystem-irun-exercise.html#irun-exercise-swim-session\">swim-session</a></td><td style=\"color: #cccccc\">Swim session</td><td>A completed swim session (e.g. an open-water swim alongside the run).</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-session-type",
+  "version" : "0.1.0",
+  "name" : "IRunSessionTypeVS",
+  "title" : "Interoperability Run - session types",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-24T10:14:58+00:00",
+  "publisher" : "Work Group Meeting HL7 Europe Malaga",
+  "contact" : [{
+    "name" : "Work Group Meeting HL7 Europe Malaga",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/"
+    }]
+  }],
+  "description" : "Kinds of exercise session: run or swim.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+      "version" : "0.1.0",
+      "concept" : [{
+        "code" : "run-session"
+      },
+      {
+        "code" : "swim-session"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "irun-exercise",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem irun-exercise</b></p><a name=\"irun-exercise\"> </a><a name=\"hcirun-exercise\"> </a><p>This case-sensitive code system <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">run-session<a name=\"irun-exercise-run-session\"> </a></td><td>Run session</td><td>A completed Interoperability Run session (exercise summary).</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"irun-exercise-distance\"> </a></td><td>Distance run</td><td>Total distance covered during the run.</td></tr><tr><td style=\"white-space:nowrap\">average-pace<a name=\"irun-exercise-average-pace\"> </a></td><td>Average pace</td><td>Average time per kilometre.</td></tr><tr><td style=\"white-space:nowrap\">swim-session<a name=\"irun-exercise-swim-session\"> </a></td><td>Swim session</td><td>A completed swim session (e.g. an open-water swim alongside the run).</td></tr><tr><td style=\"white-space:nowrap\">environment-conditions<a name=\"irun-exercise-environment-conditions\"> </a></td><td>Environmental conditions</td><td>Weather and water conditions at the course during the event.</td></tr><tr><td style=\"white-space:nowrap\">air-temperature<a name=\"irun-exercise-air-temperature\"> </a></td><td>Air temperature</td><td>Outdoor air temperature at the course.</td></tr><tr><td style=\"white-space:nowrap\">relative-humidity<a name=\"irun-exercise-relative-humidity\"> </a></td><td>Relative humidity</td><td>Outdoor relative air humidity at the course.</td></tr><tr><td style=\"white-space:nowrap\">water-temperature<a name=\"irun-exercise-water-temperature\"> </a></td><td>Water temperature</td><td>Water temperature for swimmers.</td></tr><tr><td style=\"white-space:nowrap\">run-report<a name=\"irun-exercise-run-report\"> </a></td><td>Interoperability Run report</td><td>Summary report of a participant's run: vital signs, ECG, session and conditions.</td></tr><tr><td style=\"white-space:nowrap\">preventive-checkup<a name=\"irun-exercise-preventive-checkup\"> </a></td><td>Preventive check-up</td><td>Preventive care check-up around the Interoperability Run (vital signs before and after the run).</td></tr></table></div>"
+  },
+  "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+  "version" : "0.1.0",
+  "name" : "IRunExerciseCS",
+  "title" : "Interoperability Run - exercise codes",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-19T13:44:34+00:00",
+  "publisher" : "Work Group Meeting HL7 Europe Malaga",
+  "contact" : [{
+    "name" : "Work Group Meeting HL7 Europe Malaga",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/"
+    }]
+  }],
+  "description" : "Codes for the run session and its measurements where no suitable LOINC code is used in this training IG.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 10,
+  "concept" : [{
+    "code" : "run-session",
+    "display" : "Run session",
+    "definition" : "A completed Interoperability Run session (exercise summary)."
+  },
+  {
+    "code" : "distance",
+    "display" : "Distance run",
+    "definition" : "Total distance covered during the run."
+  },
+  {
+    "code" : "average-pace",
+    "display" : "Average pace",
+    "definition" : "Average time per kilometre."
+  },
+  {
+    "code" : "swim-session",
+    "display" : "Swim session",
+    "definition" : "A completed swim session (e.g. an open-water swim alongside the run)."
+  },
+  {
+    "code" : "environment-conditions",
+    "display" : "Environmental conditions",
+    "definition" : "Weather and water conditions at the course during the event."
+  },
+  {
+    "code" : "air-temperature",
+    "display" : "Air temperature",
+    "definition" : "Outdoor air temperature at the course."
+  },
+  {
+    "code" : "relative-humidity",
+    "display" : "Relative humidity",
+    "definition" : "Outdoor relative air humidity at the course."
+  },
+  {
+    "code" : "water-temperature",
+    "display" : "Water temperature",
+    "definition" : "Water temperature for swimmers."
+  },
+  {
+    "code" : "run-report",
+    "display" : "Interoperability Run report",
+    "definition" : "Summary report of a participant's run: vital signs, ECG, session and conditions."
+  },
+  {
+    "code" : "preventive-checkup",
+    "display" : "Preventive check-up",
+    "definition" : "Preventive care check-up around the Interoperability Run (vital signs before and after the run)."
+  }]
+}

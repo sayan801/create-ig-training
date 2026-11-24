@@ -1,0 +1,20 @@
+{
+  "url" : "https://example.org/ig/interoperabilityrun/ImplementationGuide/org.fhir.eu.interoperabilityrun",
+  "name" : "ExampleIG",
+  "title" : "IG Example",
+  "description" : "Description du projet",
+  "status" : "draft",
+  "package-id" : "org.fhir.eu.interoperabilityrun",
+  "ig-ver" : "0.1.0",
+  "date" : "Thu, 19 Nov, 2026 10:52:07 +0000",
+  "dateISO8601" : "2026-11-19T10:52:07+00:00",
+  "errs" : 1,
+  "warnings" : 11,
+  "hints" : 1,
+  "broken-links" : 0,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 771733840
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "irun-event-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet irun-event-type</b></p><a name=\"irun-event-type\"> </a><a name=\"hcirun-event-type\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-irun-event-type.html\"><code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type</code></a><span title=\"Version is explicitly stated to be 0.1.0\"> version &#x1F4CD;0.1.0</span></li></ul></div>"
+  },
+  "url" : "https://example.org/ig/interoperabilityrun/ValueSet/irun-event-type",
+  "version" : "0.1.0",
+  "name" : "IRunEventTypeVS",
+  "title" : "Interoperability Run - event types",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-11-24T10:14:58+00:00",
+  "publisher" : "Work Group Meeting HL7 Europe Malaga",
+  "contact" : [{
+    "name" : "Work Group Meeting HL7 Europe Malaga",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/"
+    }]
+  }],
+  "description" : "All event types for an Interoperability Run.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "150",
+      "display" : "Europe"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type",
+      "version" : "0.1.0"
+    }]
+  }
+}

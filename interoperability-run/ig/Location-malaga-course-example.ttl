@@ -1,0 +1,40 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Location/malaga-course-example> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "malaga-course-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-location" ;
+       fhir:index 0 ;
+       fhir:link <https://example.org/ig/interoperabilityrun/StructureDefinition/irun-location>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Location malaga-course-example</b></p><a name=\"malaga-course-example\"> </a><a name=\"hcmalaga-course-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-location.html\">Interoperability Run - location</a></p></div><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Malaga seafront run course</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"The status of the location\">Status:</td><td colspan=\"3\">Active</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Additional details about the location that could be displayed as further information to identify it\">Description:</td><td colspan=\"3\">Meeting point in front of the meeting hotel; out-and-back course along the seafront (illustrative).</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Physical location\">Address:</td><td colspan=\"3\">Malaga ES </td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The latitude and longitude of the location (WGS84)\">Position:</td><td colspan=\"3\">36.7177, -4.4258</td></tr></table></div>"
+  ] ;
+  fhir:Location.status [ fhir:value "active"] ;
+  fhir:Location.name [ fhir:value "Malaga seafront run course"] ;
+  fhir:Location.description [ fhir:value "Meeting point in front of the meeting hotel; out-and-back course along the seafront (illustrative)."] ;
+  fhir:Location.address [
+     fhir:Address.city [ fhir:value "Malaga" ] ;
+     fhir:Address.country [ fhir:value "ES" ]
+  ] ;
+  fhir:Location.position [
+     fhir:Location.position.longitude [ fhir:value "-4.4258"^^xsd:decimal ] ;
+     fhir:Location.position.latitude [ fhir:value "36.7177"^^xsd:decimal ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Location/malaga-course-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

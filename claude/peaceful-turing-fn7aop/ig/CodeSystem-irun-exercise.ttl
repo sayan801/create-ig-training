@@ -1,0 +1,103 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "irun-exercise"] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem irun-exercise</b></p><a name=\"irun-exercise\"> </a><a name=\"hcirun-exercise\"> </a><p>This case-sensitive code system <code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">run-session<a name=\"irun-exercise-run-session\"> </a></td><td>Run session</td><td>A completed Interoperability Run session (exercise summary).</td></tr><tr><td style=\"white-space:nowrap\">distance<a name=\"irun-exercise-distance\"> </a></td><td>Distance run</td><td>Total distance covered during the run.</td></tr><tr><td style=\"white-space:nowrap\">average-pace<a name=\"irun-exercise-average-pace\"> </a></td><td>Average pace</td><td>Average time per kilometre.</td></tr><tr><td style=\"white-space:nowrap\">swim-session<a name=\"irun-exercise-swim-session\"> </a></td><td>Swim session</td><td>A completed swim session (e.g. an open-water swim alongside the run).</td></tr><tr><td style=\"white-space:nowrap\">environment-conditions<a name=\"irun-exercise-environment-conditions\"> </a></td><td>Environmental conditions</td><td>Weather and water conditions at the course during the event.</td></tr><tr><td style=\"white-space:nowrap\">air-temperature<a name=\"irun-exercise-air-temperature\"> </a></td><td>Air temperature</td><td>Outdoor air temperature at the course.</td></tr><tr><td style=\"white-space:nowrap\">relative-humidity<a name=\"irun-exercise-relative-humidity\"> </a></td><td>Relative humidity</td><td>Outdoor relative air humidity at the course.</td></tr><tr><td style=\"white-space:nowrap\">water-temperature<a name=\"irun-exercise-water-temperature\"> </a></td><td>Water temperature</td><td>Water temperature for swimmers.</td></tr><tr><td style=\"white-space:nowrap\">run-report<a name=\"irun-exercise-run-report\"> </a></td><td>Interoperability Run report</td><td>Summary report of a participant's run: vital signs, ECG, session and conditions.</td></tr><tr><td style=\"white-space:nowrap\">preventive-checkup<a name=\"irun-exercise-preventive-checkup\"> </a></td><td>Preventive check-up</td><td>Preventive care check-up around the Interoperability Run (vital signs before and after the run).</td></tr></table></div>"
+  ] ;
+  fhir:CodeSystem.url [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"] ;
+  fhir:CodeSystem.version [ fhir:value "0.1.0"] ;
+  fhir:CodeSystem.name [ fhir:value "IRunExerciseCS"] ;
+  fhir:CodeSystem.title [ fhir:value "Interoperability Run - exercise codes"] ;
+  fhir:CodeSystem.status [ fhir:value "draft"] ;
+  fhir:CodeSystem.experimental [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.date [ fhir:value "2026-11-24T10:14:58+00:00"^^xsd:dateTime] ;
+  fhir:CodeSystem.publisher [ fhir:value "Work Group Meeting HL7 Europe Malaga"] ;
+  fhir:CodeSystem.contact [
+     fhir:index 0 ;
+     fhir:ContactDetail.name [ fhir:value "Work Group Meeting HL7 Europe Malaga" ] ;
+     fhir:ContactDetail.telecom [
+       fhir:index 0 ;
+       fhir:ContactPoint.system [ fhir:value "url" ] ;
+       fhir:ContactPoint.value [ fhir:value "https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/" ]
+     ]
+  ] ;
+  fhir:CodeSystem.description [ fhir:value "Codes for the run session and its measurements where no suitable LOINC code is used in this training IG."] ;
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "http://unstats.un.org/unsd/methods/m49/m49.htm" ] ;
+       fhir:Coding.code [ fhir:value "150" ] ;
+       fhir:Coding.display [ fhir:value "Europe" ]
+     ]
+  ] ;
+  fhir:CodeSystem.caseSensitive [ fhir:value "true"^^xsd:boolean] ;
+  fhir:CodeSystem.content [ fhir:value "complete"] ;
+  fhir:CodeSystem.count [ fhir:value "10"^^xsd:nonNegativeInteger] ;
+  fhir:CodeSystem.concept [
+     fhir:index 0 ;
+     fhir:CodeSystem.concept.code [ fhir:value "run-session" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Run session" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A completed Interoperability Run session (exercise summary)." ]
+  ], [
+     fhir:index 1 ;
+     fhir:CodeSystem.concept.code [ fhir:value "distance" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Distance run" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Total distance covered during the run." ]
+  ], [
+     fhir:index 2 ;
+     fhir:CodeSystem.concept.code [ fhir:value "average-pace" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Average pace" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Average time per kilometre." ]
+  ], [
+     fhir:index 3 ;
+     fhir:CodeSystem.concept.code [ fhir:value "swim-session" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Swim session" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "A completed swim session (e.g. an open-water swim alongside the run)." ]
+  ], [
+     fhir:index 4 ;
+     fhir:CodeSystem.concept.code [ fhir:value "environment-conditions" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Environmental conditions" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Weather and water conditions at the course during the event." ]
+  ], [
+     fhir:index 5 ;
+     fhir:CodeSystem.concept.code [ fhir:value "air-temperature" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Air temperature" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Outdoor air temperature at the course." ]
+  ], [
+     fhir:index 6 ;
+     fhir:CodeSystem.concept.code [ fhir:value "relative-humidity" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Relative humidity" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Outdoor relative air humidity at the course." ]
+  ], [
+     fhir:index 7 ;
+     fhir:CodeSystem.concept.code [ fhir:value "water-temperature" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Water temperature" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Water temperature for swimmers." ]
+  ], [
+     fhir:index 8 ;
+     fhir:CodeSystem.concept.code [ fhir:value "run-report" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Interoperability Run report" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Summary report of a participant's run: vital signs, ECG, session and conditions." ]
+  ], [
+     fhir:index 9 ;
+     fhir:CodeSystem.concept.code [ fhir:value "preventive-checkup" ] ;
+     fhir:CodeSystem.concept.display [ fhir:value "Preventive check-up" ] ;
+     fhir:CodeSystem.concept.definition [ fhir:value "Preventive care check-up around the Interoperability Run (vital signs before and after the run)." ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,20 @@
+{
+  "url" : "https://example.org/ig/interoperabilityrun/ImplementationGuide/org.fhir.eu.interoperabilityrun",
+  "name" : "InteroperabilityRunIG",
+  "title" : "Interoperability Run IG",
+  "description" : "Captures vital-sign observations (heart rate, SpO2, ECG) recorded by wearable devices during the Interoperability Run held at HL7 Working Group Meetings, Connectathons and DevDays.",
+  "status" : "draft",
+  "package-id" : "org.fhir.eu.interoperabilityrun",
+  "ig-ver" : "0.1.0",
+  "date" : "Tue, 24 Nov, 2026 10:14:58 +0000",
+  "dateISO8601" : "2026-11-24T10:14:58+00:00",
+  "errs" : 2,
+  "warnings" : 29,
+  "hints" : 64,
+  "broken-links" : 0,
+  "suppressed-hints" : 950,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "6.0.0-snapshot1 (3)",
+  "maxMemory" : 2044743696
+}

@@ -1,0 +1,102 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/CarePlan/preventive-careplan-example> a fhir:CarePlan ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "preventive-careplan-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-preventive-careplan" ;
+       fhir:index 0 ;
+       fhir:link <https://example.org/ig/interoperabilityrun/StructureDefinition/irun-preventive-careplan>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CarePlan preventive-careplan-example</b></p><a name=\"preventive-careplan-example\"> </a><a name=\"hcpreventive-careplan-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-preventive-careplan.html\">Interoperability Run - preventive care plan</a></p></div><p><b>status</b>: Active</p><p><b>intent</b>: Plan</p><p><b>category</b>: <span title=\"Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise preventive-checkup}\">Preventive check-up</span></p><p><b>title</b>: Interoperability Run preventive check-up</p><p><b>description</b>: Measure resting heart rate and SpO2 before the run, join the run, then record recovery heart rate and a single-lead ECG after the finish.</p><p><b>subject</b>: <a href=\"Patient-runner-example.html\">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p><p><b>period</b>: 2026-11-18 07:00:00+0100 --&gt; 2026-11-18 09:00:00+0100</p><blockquote><p><b>activity</b></p><p><b>reference</b>: <a href=\"Appointment-run-appointment-example.html\">Appointment: status = booked; serviceType = Interoperability Run; description = Interoperability Run - HL7 Europe WGM Malaga 2026, meeting point in front of the hotel; start = 2026-11-18 07:30:00+0100; end = 2026-11-18 08:15:00+0100</a></p></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 8867-4}\">Heart rate</span></td><td>Completed</td><td>Resting and recovery heart rate (before and after the run)</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 2708-6}\">Oxygen saturation in Arterial blood</span></td><td>Completed</td><td>SpO2 before and during the run</td></tr></table></blockquote><blockquote><p><b>activity</b></p><h3>Details</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Code</b></td><td><b>Status</b></td><td><b>Description</b></td></tr><tr><td style=\"display: none\">*</td><td><span title=\"Codes:{http://loinc.org 11524-6}\">EKG study</span></td><td>Completed</td><td>Single-lead ECG right after the finish</td></tr></table></blockquote></div>"
+  ] ;
+  fhir:CarePlan.status [ fhir:value "active"] ;
+  fhir:CarePlan.intent [ fhir:value "plan"] ;
+  fhir:CarePlan.category [
+     fhir:index 0 ;
+     fhir:CodeableConcept.coding [
+       fhir:index 0 ;
+       fhir:Coding.system [ fhir:value "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise" ] ;
+       fhir:Coding.code [ fhir:value "preventive-checkup" ]
+     ]
+  ] ;
+  fhir:CarePlan.title [ fhir:value "Interoperability Run preventive check-up"] ;
+  fhir:CarePlan.description [ fhir:value "Measure resting heart rate and SpO2 before the run, join the run, then record recovery heart rate and a single-lead ECG after the finish."] ;
+  fhir:CarePlan.subject [
+     fhir:link <https://example.org/ig/interoperabilityrun/Patient/runner-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/runner-example" ]
+  ] ;
+  fhir:CarePlan.period [
+     fhir:Period.start [ fhir:value "2026-11-18T07:00:00+01:00"^^xsd:dateTime ] ;
+     fhir:Period.end [ fhir:value "2026-11-18T09:00:00+01:00"^^xsd:dateTime ]
+  ] ;
+  fhir:CarePlan.activity [
+     fhir:index 0 ;
+     fhir:CarePlan.activity.reference [
+       fhir:link <https://example.org/ig/interoperabilityrun/Appointment/run-appointment-example> ;
+       fhir:Reference.reference [ fhir:value "Appointment/run-appointment-example" ]
+     ]
+  ], [
+     fhir:index 1 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a loinc:8867-4 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "8867-4" ] ;
+           fhir:Coding.display [ fhir:value "Heart rate" ]
+         ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "completed" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Resting and recovery heart rate (before and after the run)" ]
+     ]
+  ], [
+     fhir:index 2 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a loinc:2708-6 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "2708-6" ] ;
+           fhir:Coding.display [ fhir:value "Oxygen saturation in Arterial blood" ]
+         ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "completed" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "SpO2 before and during the run" ]
+     ]
+  ], [
+     fhir:index 3 ;
+     fhir:CarePlan.activity.detail [
+       fhir:CarePlan.activity.detail.code [
+         fhir:CodeableConcept.coding [
+           fhir:index 0 ;
+           a loinc:11524-6 ;
+           fhir:Coding.system [ fhir:value "http://loinc.org" ] ;
+           fhir:Coding.code [ fhir:value "11524-6" ] ;
+           fhir:Coding.display [ fhir:value "EKG study" ]
+         ]
+       ] ;
+       fhir:CarePlan.activity.detail.status [ fhir:value "completed" ] ;
+       fhir:CarePlan.activity.detail.description [ fhir:value "Single-lead ECG right after the finish" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/CarePlan/preventive-careplan-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

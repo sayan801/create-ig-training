@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Device/wearable-example> a fhir:Device ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:Resource.id [ fhir:value "wearable-example"] ;
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://example.org/ig/interoperabilityrun/StructureDefinition/irun-wearable-device" ;
+       fhir:index 0 ;
+       fhir:link <https://example.org/ig/interoperabilityrun/StructureDefinition/irun-wearable-device>
+     ]
+  ] ;
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ] ;
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Device wearable-example</b></p><a name=\"wearable-example\"> </a><a name=\"hcwearable-example\"> </a><div style=\"display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-irun-wearable-device.html\">Interoperability Run - wearable device</a></p></div><p><b>manufacturer</b>: Example Wearables Ltd</p><h3>DeviceNames</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td style=\"display: none\">*</td><td>Example smartwatch</td><td>User Friendly name</td></tr></table><p><b>modelNumber</b>: SW-1</p><p><b>type</b>: <span title=\"Codes:\">Wrist-worn fitness tracker with heart rate, SpO2 and single-lead ECG</span></p><p><b>patient</b>: <a href=\"Patient-runner-example.html\">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p></div>"
+  ] ;
+  fhir:Device.manufacturer [ fhir:value "Example Wearables Ltd"] ;
+  fhir:Device.deviceName [
+     fhir:index 0 ;
+     fhir:Device.deviceName.name [ fhir:value "Example smartwatch" ] ;
+     fhir:Device.deviceName.type [ fhir:value "user-friendly-name" ]
+  ] ;
+  fhir:Device.modelNumber [ fhir:value "SW-1"] ;
+  fhir:Device.type [
+     fhir:CodeableConcept.text [ fhir:value "Wrist-worn fitness tracker with heart rate, SpO2 and single-lead ECG" ]
+  ] ;
+  fhir:Device.patient [
+     fhir:link <https://example.org/ig/interoperabilityrun/Patient/runner-example> ;
+     fhir:Reference.reference [ fhir:value "Patient/runner-example" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://example.org/ig/interoperabilityrun/Device/wearable-example.ttl> a owl:Ontology ;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

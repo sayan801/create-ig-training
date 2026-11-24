@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="environment-conditions-example"/>
+  <meta>
+    <profile value="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-environment-conditions"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation environment-conditions-example</b></p><a name="environment-conditions-example"> </a><a name="hcenvironment-conditions-example"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-irun-environment-conditions.html">Interoperability Run - environmental conditions</a></p></div><blockquote><p><b>Interoperability Run context</b></p><ul><li>eventType: <a href="CodeSystem-irun-event-type.html#irun-event-type-wgm">Interoperability Run - event type: wgm</a> (HL7 Working Group Meeting)</li><li>eventName: HL7 Europe WGM Malaga 2026</li><li>phase: <a href="CodeSystem-irun-phase.html#irun-phase-during-run">Interoperability Run - measurement phase: during-run</a> (During the run)</li><li>location: <a href="Location-malaga-course-example.html">Malaga seafront run course</a></li></ul></blockquote><p><b>status</b>: Final</p><p><b>code</b>: <span title="Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise environment-conditions}">Environmental conditions</span></p><p><b>subject</b>: <a href="Location-malaga-course-example.html">Malaga seafront run course</a></p><p><b>effective</b>: 2026-11-18 07:30:00+0100</p><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise air-temperature}">Air temperature</span></p><p><b>value</b>: 14 °C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise relative-humidity}">Relative humidity</span></p><p><b>value</b>: 72 %<span style="background: LightGoldenRodYellow"> (Details: UCUM  code% = '%')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes:{https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise water-temperature}">Water temperature</span></p><p><b>value</b>: 18 °C<span style="background: LightGoldenRodYellow"> (Details: UCUM  codeCel = 'Cel')</span></p></blockquote></div>
+  </text>
+  <extension url="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context">
+    <extension url="eventType">
+      <valueCoding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+        <code value="wgm"/>
+      </valueCoding>
+    </extension>
+    <extension url="eventName">
+      <valueString value="HL7 Europe WGM Malaga 2026"/>
+    </extension>
+    <extension url="phase">
+      <valueCoding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+        <code value="during-run"/>
+      </valueCoding>
+    </extension>
+    <extension url="location">
+      <valueReference>
+        <reference value="Location/malaga-course-example"/>
+      </valueReference>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+      <code value="environment-conditions"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Location/malaga-course-example"/>
+  </subject>
+  <effectiveDateTime value="2026-11-18T07:30:00+01:00"/>
+  <component>
+    <code>
+      <coding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+        <code value="air-temperature"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="14"/>
+      <unit value="°C"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+        <code value="relative-humidity"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="72"/>
+      <unit value="%"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="%"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise"/>
+        <code value="water-temperature"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="18"/>
+      <unit value="°C"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="Cel"/>
+    </valueQuantity>
+  </component>
+</Observation>

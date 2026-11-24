@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="irun-phase"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet irun-phase</b></p><a name="irun-phase"> </a><a name="hcirun-phase"> </a><ul><li>Include all codes defined in <a href="CodeSystem-irun-phase.html"><code>https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase</code></a><span title="Version is explicitly stated to be 0.1.0"> version &#x1F4CD;0.1.0</span></li></ul></div>
+  </text>
+  <url value="https://example.org/ig/interoperabilityrun/ValueSet/irun-phase"/>
+  <version value="0.1.0"/>
+  <name value="IRunPhaseVS"/>
+  <title value="Interoperability Run - measurement phases"/>
+  <status value="draft"/>
+  <experimental value="true"/>
+  <date value="2026-11-19T13:44:34+00:00"/>
+  <publisher value="Work Group Meeting HL7 Europe Malaga"/>
+  <contact>
+    <name value="Work Group Meeting HL7 Europe Malaga"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://hl7europe.eu/hl7-europe-working-group-meeting-malaga-2026/"/>
+    </telecom>
+  </contact>
+  <description value="All measurement phases for an Interoperability Run."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="150"/>
+      <display value="Europe"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+      <version value="0.1.0"/>
+    </include>
+  </compose>
+</ValueSet>

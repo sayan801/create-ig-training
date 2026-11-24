@@ -1,0 +1,35 @@
+{
+  "codeSystems" : [{
+    "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunEventTypeCS",
+    "title" : "Interoperability Run - event type",
+    "description" : "The kind of community event at which an Interoperability Run takes place.",
+    "uses" : {
+    },
+    "ValueSet-irun-event-type.html" : "Interoperability Run - event types"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-exercise",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunExerciseCS",
+    "title" : "Interoperability Run - exercise codes",
+    "description" : "Codes for the run session and its measurements where no suitable LOINC code is used in this training IG.",
+    "uses" : {
+    },
+    "ValueSet-irun-session-type.html" : "Interoperability Run - session types"
+  },
+  {
+    "url" : "https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase",
+    "version" : "0.1.0",
+    "status" : "draft",
+    "name" : "IRunPhaseCS",
+    "title" : "Interoperability Run - measurement phase",
+    "description" : "When, relative to the run, a measurement was taken.",
+    "uses" : {
+    },
+    "ValueSet-irun-phase.html" : "Interoperability Run - measurement phases"
+  }]
+}

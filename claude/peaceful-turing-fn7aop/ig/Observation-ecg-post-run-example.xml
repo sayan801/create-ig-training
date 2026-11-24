@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ecg-post-run-example"/>
+  <meta>
+    <profile value="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-ecg"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation ecg-post-run-example</b></p><a name="ecg-post-run-example"> </a><a name="hcecg-post-run-example"> </a><div style="display: inline-block; background-color: #fbffeb; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-irun-ecg.html">Interoperability Run - ECG</a></p></div><blockquote><p><b>Interoperability Run context</b></p><ul><li>eventType: <a href="CodeSystem-irun-event-type.html#irun-event-type-wgm">Interoperability Run - event type: wgm</a> (HL7 Working Group Meeting)</li><li>eventName: HL7 Europe WGM Malaga 2026</li><li>phase: <a href="CodeSystem-irun-phase.html#irun-phase-post-run">Interoperability Run - measurement phase: post-run</a> (After the run)</li></ul></blockquote><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category procedure}">Procedure</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 11524-6}">EKG study</span></p><p><b>subject</b>: <a href="Patient-runner-example.html">Alex Runner  Other, DoB: 1985-04-12 ( https://example.org/ig/interoperabilityrun/bib#MLG26-042)</a></p><p><b>effective</b>: 2026-11-18 08:05:00+0100 --&gt; 2026-11-18 08:05:30+0100</p><p><b>device</b>: <a href="Device-wearable-example.html">Device: manufacturer = Example Wearables Ltd; modelNumber = SW-1; type = Wrist-worn fitness tracker with heart rate, SpO2 and single-lead ECG</a></p><h3>Components</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Code</b></td><td><b>Value[x]</b></td></tr><tr><td style="display: none">*</td><td><span title="Codes:{urn:oid:2.16.840.1.113883.6.24 131329}">MDC_ECG_ELEC_POTL_I</span></td><td>Origin: 0 mV , Factor: 1 , Dimensions: 1 , Data: 0.02 0.03 0.05 0.04 0.02 -0.05 1.10 -0.30 0.01 0.08 0.15 0.12 0.05 0.02 </td></tr></table></div>
+  </text>
+  <extension url="https://example.org/ig/interoperabilityrun/StructureDefinition/irun-context">
+    <extension url="eventType">
+      <valueCoding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-event-type"/>
+        <code value="wgm"/>
+      </valueCoding>
+    </extension>
+    <extension url="eventName">
+      <valueString value="HL7 Europe WGM Malaga 2026"/>
+    </extension>
+    <extension url="phase">
+      <valueCoding>
+        <system value="https://example.org/ig/interoperabilityrun/CodeSystem/irun-phase"/>
+        <code value="post-run"/>
+      </valueCoding>
+    </extension>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="procedure"/>
+      <display value="Procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="11524-6"/>
+      <display value="EKG study"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/runner-example"/>
+  </subject>
+  <effectivePeriod>
+    <start value="2026-11-18T08:05:00+01:00"/>
+    <end value="2026-11-18T08:05:30+01:00"/>
+  </effectivePeriod>
+  <device>
+    <reference value="Device/wearable-example"/>
+  </device>
+  <component>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.6.24"/>
+        <code value="131329"/>
+        <display value="MDC_ECG_ELEC_POTL_I"/>
+      </coding>
+    </code>
+    <valueSampledData>
+      <origin>
+        <value value="0"/>
+        <unit value="mV"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mV"/>
+      </origin>
+      <period value="2"/>
+      <factor value="1"/>
+      <dimensions value="1"/>
+      <data value="0.02 0.03 0.05 0.04 0.02 -0.05 1.10 -0.30 0.01 0.08 0.15 0.12 0.05 0.02"/>
+    </valueSampledData>
+  </component>
+</Observation>
